@@ -1,8 +1,8 @@
-import {Header,Footer,Content,SubHeader} from "./common/common"
-import {ProductList} from "./common/ProductList"
+import {Header,Footer,Content,SubHeader} from "../components/common"
+import {ProductList} from "../components/ProductList"
 import React,{Component} from "react"
-import ReactDOM from "react-dom"
-import {ScrollOptions} from "./config/config"
+
+import {ScrollOptions} from "../config/config"
 import ReactIScroll from "react-iscroll"
 console.log(ReactIScroll)
 
@@ -18,10 +18,10 @@ class ClassList extends Component{
         return (
             <ul>
                 {
-                  this.props.classData.map((ele,index)=><li onClick={this.handeClick.bind(this,ele.classID)} key={index}>{ele.className}</li>)
+                    this.props.classData.map((ele,index)=><li onClick={this.handeClick.bind(this,ele.classID)} key={index}>{ele.className}</li>)
                 }
             </ul>
-            )
+        )
     }
 }
 
@@ -41,8 +41,8 @@ class ListPage extends Component{
                 data=JSON.parse(data)
             }
             this.setState({
-                    classData: data
-             })
+                classData: data
+            })
         } ,"json");
         this.getProductData()
     }
@@ -89,7 +89,7 @@ class ListPage extends Component{
             <div className="page" id="list-page">
                 <Header title="列表" right="搜素" left="<"/>
                 <SubHeader>
-                        <ClassList  changeclassID={(id)=>this.changeclassID(id)} classData={this.state.classData}/>
+                    <ClassList  changeclassID={(id)=>this.changeclassID(id)} classData={this.state.classData}/>
                 </SubHeader>
                 <Content Hasheader={true} Hasfooter={true} >
                     <ReactIScroll iScroll={IScroll} options={ScrollOptions} onScroll={(myScroll)=>this.onScroll(myScroll)}
@@ -111,4 +111,4 @@ ClassList.defaultProps={
 ListPage.defaultProps={
     listData:["我是商品1","我是商品2","我是商品3"]
 };
-ReactDOM.render(<ListPage listUrl="列表"/>,document.getElementById("root"))
+export default ListPage
