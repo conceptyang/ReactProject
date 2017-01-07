@@ -1,0 +1,22 @@
+.feedbackPage .content{
+    background: #fff;
+}
+.feedbackPage .text{
+    width: 80%;
+    height:40%;
+    margin:30px 10%;
+    border:1px solid #e2e2e2;
+    border-radius: 5px;
+    font-size: 18px;
+
+}
+.feedbackPage p{
+    width:100%;
+    padding:20px;
+}
+.feedbackPage p .save{
+    width:100%;
+    background: green;
+    color: #fff;
+    height: 40px ;
+}

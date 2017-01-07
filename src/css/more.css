@@ -1,0 +1,26 @@
+.morePage .content{
+    background: #f7f7f7;
+}
+.morePage .morelist{
+    width:100%;
+    background: #fff;
+}
+.morePage .morelist li{
+    width:100%;
+    padding:5px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.morePage .morelist li a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+}
+.morePage .morelist li a .list-left{
+    float: left;
+}
+.morePage .morelist li a .list-right{
+    float: right;
+    color: #8e8e8e;
+}

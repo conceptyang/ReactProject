@@ -1,10 +1,13 @@
+import "../css/list.css"
 import {Header,Footer,Content,SubHeader} from "../components/common"
 import {ProductList} from "../components/ProductList"
 import React,{Component} from "react"
-
+import loading from "../imgs/loading.gif"
 import {ScrollOptions} from "../config/config"
 import ReactIScroll from "react-iscroll"
-console.log(ReactIScroll)
+import {Tools} from "../tools/tools"
+import {Rems} from "../components/newRem"
+
 
 class ClassList extends Component{
     constructor(props){
@@ -16,9 +19,12 @@ class ClassList extends Component{
     }
     render(){
         return (
-            <ul>
+            <ul >
                 {
-                    this.props.classData.map((ele,index)=><li onClick={this.handeClick.bind(this,ele.classID)} key={index}>{ele.className}</li>)
+                    this.props.classData.map((ele,index)=><li onClick={this.handeClick.bind(this,ele.classID)} key={index}>
+                        <p>{ele.className}</p>
+
+                        </li>)
                 }
             </ul>
         )
@@ -47,6 +53,7 @@ class ListPage extends Component{
         this.getProductData()
     }
     getProductData(){
+        $("#loading").show();
         $.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?",{
             "classID":this.classID,
             "linenumber":this.linenumber,
@@ -57,13 +64,15 @@ class ListPage extends Component{
                     listData: this.pageCode==0?data:this.state.listData.concat(data)
                 })
             }
-
         })
+        $("#loading").fadeOut()
     }
     onScrollEnd(Scroll){
         if (this.refresh){
             this.pageCode=0;
             this.getProductData();
+            that.canreLoad = false;
+
             this.refresh=false;
         }else  if (Scroll.y-Scroll.maxScrollY<=20){
             console.log("加载更多")
@@ -73,9 +82,12 @@ class ListPage extends Component{
         }
     }
     onScroll(Scroll){
+        console.log(1)
         if (Scroll.y>50){
             console.log("刷新")
-            this.refresh=true
+            $(".scrollText").show()
+            this.refresh=true;
+
         }
     }
     changeclassID(id){
@@ -84,25 +96,38 @@ class ListPage extends Component{
         console.log(id);
         this.getProductData();
     }
+    checkUser(ev){
+        if (Tools.getUserId()){
+            ev.target.href="#/cart"
+        }else {
+            ev.target.href="#/login"
+        }
+    }
     render() {
         return (
             <div className="page" id="list-page">
-                <Header title="列表" right="搜素" left="<"/>
+                <Header hasLeft={true} hasRight={true}   title="列表" right={<a  onClick={(ev)=>this.checkUser(ev)} className="iconfont">&#xe608;</a>} left="<"/>
                 <SubHeader>
                     <ClassList  changeclassID={(id)=>this.changeclassID(id)} classData={this.state.classData}/>
                 </SubHeader>
                 <Content Hasheader={true} Hasfooter={true} >
+                    <p className="scrollText">下拉刷新</p>
                     <ReactIScroll iScroll={IScroll} options={ScrollOptions} onScroll={(myScroll)=>this.onScroll(myScroll)}
                                   onScrollEnd={(myScroll)=>this.onScrollEnd(myScroll)} >
                         <ProductList   listData={this.state.listData}/>
                     </ReactIScroll>
-
-
+                    <div id="loading">
+                        <div className="loadingImg">
+                            <img src={loading}/>
+                        </div>
+                    </div>
                 </Content>
-                <Footer/>
-
+                <Footer active="1"/>
             </div>
         )
+    }
+    componentDidMount(){
+        Rems.rem(document, window);
     }
 }
 ClassList.defaultProps={

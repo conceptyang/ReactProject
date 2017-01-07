@@ -1,0 +1,165 @@
+#index-page .content{
+    overflow-y: scroll;
+}
+#index-page .content .swiper {
+    width: 100vw;
+    position: relative;
+}
+#index-page .content .swiper-container {
+    width: 100vw;
+    position: relative;
+}
+#index-page .content .swiper-wrapper{
+    display: flex;
+}
+#index-page .content .swiper-container img {
+    width: 100vw;
+    height: 40vw; }
+#index-page .content .swiper-btns {
+    position: absolute;
+    bottom: 0px;
+    left:50%;
+    margin-left:-40px;
+    height: 30px;
+    padding: 5px 0;
+    text-align: center; }
+#index-page .content .swiper-btns ul {
+    font-size: 0;
+    display: inline-block;
+    height: 20px;
+    padding: 4px 10px;
+    background-color: #bcbcbc;
+    border-radius: 10px; }
+#index-page .content .swiper-btns .swiper-pagination-bullet {
+    display: inline-block;
+    background-color: #959595;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 3px; }
+#index-page .content .swiper-btns .swiper-pagination-bullet-active {
+    background-color: #fff; }
+#index-page .content .classify{
+
+}
+#index-page .content .indexPage-content-top{
+    background-color: #F3F3F3;
+    padding-bottom: 10px;
+}
+#index-page .content .classify .classify-ul{
+    overflow: hidden;
+    width: 100%;
+    padding:10px 0;
+}
+#index-page .content .classify .classify-ul li{
+    float: left;
+    width:20%;
+    text-align: center;
+    padding:5px 3px;
+    }
+#index-page .content .classify .classify-ul li i{
+    font-size: 40px;
+}
+#index-page .content .classify .classify-ul li p{
+    margin-top:5px;
+
+}
+#index-page .content .firstNew {
+    overflow: hidden;
+    width:90%;
+    margin:0 5%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding:3px;
+}
+#index-page .content .firstNew .left,.middle,.right{
+    float: left;
+}
+#index-page .content .firstNew .left{
+    width:30%;
+}
+#index-page .content .firstNew .left img{
+    width: 100%;
+}
+
+#index-page .content .firstNew .middle{
+    width:50%;
+}
+
+#index-page .content .firstNew .right{
+    width:20%;
+    padding-left:5px;
+}
+#index-page .content .seckill{
+    overflow: hidden;
+    width:100%;
+    padding: 10px;
+}
+#index-page .content .seckill .seckill-left{
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+#index-page .content .seckill .seckill-time{
+    padding: 0 5px;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
+#index-page .content .seckill .seckill-lastTime{
+    margin: 0 10px;
+    color: #9a9fa5;
+}
+#index-page .content .seckill .seckill-lastTime .timeWrap{
+    border:1px solid #ccc;
+    display: inline-block;
+    padding:3px;
+}
+#index-page .content .seckill .seckill-right{
+    float: right;
+    color: red;
+}
+#index-page .content .seckill .seckill-right .jiao{
+    background-color: red;
+    border-radius: 3px;
+    color: #fff;
+    width:10px;
+    height: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 10px;
+}
+#index-page .goods-wrap{
+    width:100%;
+}
+#index-page .seckill-goods{
+    white-space: nowrap;
+    overflow-x:  scroll;
+    padding:10px;
+}
+#index-page .seckill-goods dl{
+    display: inline-block;
+    width:110px;
+    text-align: center;
+
+}
+#index-page .seckill-goods dt img{
+    width:94px;
+    height: 81px;
+    display: inline-block;
+}
+#index-page .seckill-goods .np {
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    width: 100%;
+}
+#index-page .seckill-goods dd {
+    width: 100%;
+    padding: 3px 0;
+    color: #9a9fa5;
+}
+#index-page .content .indexPage-content-bottom img{
+    display: block;
+    width: 100%;
+}

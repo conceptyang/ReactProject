@@ -1,0 +1,45 @@
+ .cover{
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+}
+.showcover{
+    display: block;
+}
+
+.cover .tooltip{
+    width:60%;
+    height: 30%;
+    position: fixed;
+    top:20%;
+    left: 20%;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+    background: rgba(255,255,255,1);
+}
+.cover .tooltip .title{
+    width:100%;
+    height:30px;
+    border-bottom: 1px solid #8e8e8e;
+    padding: 0;
+}
+.cover .tooltip .title .back{
+    font-size: 20px;
+    padding:3px 10px;
+    float: right;
+    background: #9a9fa5;
+}
+.cover .tooltip .cover-con{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    line-height: 100px;
+    height:100px;
+}
+
+
+

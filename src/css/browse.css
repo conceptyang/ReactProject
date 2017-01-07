@@ -1,0 +1,37 @@
+#browse-page .content{
+    background-color: rgba(245,245,247,1);
+}
+#browse-page .pro-list{
+    overflow: hidden;
+}
+#browse-page .pro-item {
+    float: left;
+    width: 3.2rem;
+    padding: 0.2rem 0.37rem; }
+#browse-page .pro-item .pic {
+    width: 2.44rem;
+    box-shadow: 0 0 1px #000;
+    display: block;
+    padding: 0.06rem; }
+#browse-page .pro-item img {
+    display: block;
+    width: 2.32rem;
+    height: 2.44rem; }
+#browse-page .pro-item p {
+    line-height: 1.8;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block; }
+#browse-page .pro-item .price {
+    overflow: hidden; }
+#browse-page .pro-item em {
+    float: left;
+    color: #d31112;
+    font-size: 0.22rem; }
+
+
+
+
+

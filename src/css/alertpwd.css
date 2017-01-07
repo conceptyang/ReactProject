@@ -1,0 +1,82 @@
+.alertPwdPage .content{
+    background: #fff;
+}
+.alertPwdPage .pwdlist{
+    width:100%;
+    padding: 20px;
+}
+.alertPwdPage .pwdlist li{
+    height: 50px;
+    line-height: 50px;
+}
+.alertPwdPage .pwdlist li input{
+    width:100%;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px ;
+    border:1px solid #e6e6e6;
+}
+.alertPwdPage .pwdlist .error{
+    height:20px;
+    line-height:20px;
+}
+.alertPwdPage .pwdlist .error span{
+    color: red;
+    display: inline-block;
+    float: right;
+    font-size:15px ;
+}
+.alertPwdPage p{
+    width:100%;
+    padding:20px;
+
+}
+.alertPwdPage p .save{
+    width:100%;
+    background: green;
+    color: #fff;
+    height: 40px ;
+}
+.alertPwdPage .cover{
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+}
+.alertPwdPage .showcover{
+    display: block;
+}
+
+.alertPwdPage .cover .tooltip{
+    width:60%;
+    height: 30%;
+    position: fixed;
+    top:20%;
+    left: 20%;
+    background: rgba(255,255,255,1);
+}
+.alertPwdPage .cover .tooltip .title{
+     width:100%;
+     height:30px;
+    border-bottom: 1px solid #8e8e8e;
+    padding: 0;
+}
+.alertPwdPage .cover .tooltip .title .back{
+    font-size: 20px;
+    padding:3px 10px;
+    float: right;
+    background: #9a9fa5;
+}
+.alertPwdPage .cover .tooltip .cover-con{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    line-height: 100px;
+    height:100px;
+}
+
+
+

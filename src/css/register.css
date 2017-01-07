@@ -1,0 +1,34 @@
+
+/*登录部分*/
+.content{background: #f3eff0}
+.register-list { padding: 20px; font-size: 14px;  margin-top: 10px}
+.register-list li { padding: 3px;  display: flex;background:#fff;overflow: hidden;border-radius: 5px}
+.register-list li span{flex:3;display: inline-block;text-align: center;height: 40px;line-height: 40px}
+.register-list .error{height:20px;color:red;background: #f3eff0;padding: 0}
+.register-list .error span{float:right;height:20px;line-height: 20px;text-align: right}
+.register-list li input{flex:7}
+.text-bar { width: 100%; height: 40px;}
+.go-forget { margin: 0 10px;}
+.go-login {
+    display:block;
+    width:100%;
+    padding:20px;
+}
+.bigbut{
+    display:block;
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    text-align: center;
+    marign:0 20px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 4px;
+    letter-spacing: 5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3), inset 0 0 1px rgba(255, 255, 255, 0.3);
+    background: -webkit-linear-gradient(top, #cb0f0e 0%, #b80606 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #cb0f0e 0%, #b80606 100%);
+}
+

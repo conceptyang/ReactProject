@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a2df9a0c15d0d9cd3aac"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "9b99878a8788eaddfb25"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -8517,23 +8517,83 @@
 	
 	var _indexPage2 = _interopRequireDefault(_indexPage);
 	
-	var _listPage = __webpack_require__(293);
+	var _listPage = __webpack_require__(314);
 	
 	var _listPage2 = _interopRequireDefault(_listPage);
 	
-	var _detailPage = __webpack_require__(303);
+	var _detailPage = __webpack_require__(318);
 	
 	var _detailPage2 = _interopRequireDefault(_detailPage);
 	
+	var _informationPage = __webpack_require__(320);
+	
+	var _informationPage2 = _interopRequireDefault(_informationPage);
+	
+	var _browsePage = __webpack_require__(322);
+	
+	var _browsePage2 = _interopRequireDefault(_browsePage);
+	
+	var _feedbackPage = __webpack_require__(324);
+	
+	var _feedbackPage2 = _interopRequireDefault(_feedbackPage);
+	
+	var _loginPage = __webpack_require__(328);
+	
+	var _loginPage2 = _interopRequireDefault(_loginPage);
+	
+	var _registerPage = __webpack_require__(330);
+	
+	var _registerPage2 = _interopRequireDefault(_registerPage);
+	
+	var _myShowPage = __webpack_require__(332);
+	
+	var _myShowPage2 = _interopRequireDefault(_myShowPage);
+	
+	var _morePage = __webpack_require__(335);
+	
+	var _morePage2 = _interopRequireDefault(_morePage);
+	
+	var _alertPwdPage = __webpack_require__(337);
+	
+	var _alertPwdPage2 = _interopRequireDefault(_alertPwdPage);
+	
+	var _productCar = __webpack_require__(339);
+	
+	var _productCar2 = _interopRequireDefault(_productCar);
+	
+	var _checkOrder = __webpack_require__(341);
+	
+	var _checkOrder2 = _interopRequireDefault(_checkOrder);
+	
+	var _myOrder = __webpack_require__(344);
+	
+	var _myOrder2 = _interopRequireDefault(_myOrder);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	//列表详情部分
 	_reactDom2.default.render(_react2.default.createElement(
 	    _reactRouter.Router,
 	    { history: _reactRouter.hashHistory },
+	    _react2.default.createElement(_reactRouter.Route, { path: "login", component: _loginPage2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "register", component: _registerPage2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "myShow", component: _myShowPage2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "more", component: _morePage2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "alertpwd", component: _alertPwdPage2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "feedback", component: _feedbackPage2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "/", component: _indexPage2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: "list", component: _listPage2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: "detail", component: _detailPage2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: "detail(/:goodsID)", component: _detailPage2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "information(/:goodsID)", component: _informationPage2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "browse(/:goodsID)", component: _browsePage2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "cart", component: _productCar2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "checkorder", component: _checkOrder2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: "myOrder", component: _myOrder2.default })
 	), document.getElementById("root"));
+	//购物车订单部分
+	
+	//用户登录注册部分
+	
 	
 	if (true) {
 	    module.hot.accept();
@@ -33053,9 +33113,63 @@
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
+	__webpack_require__(293);
+	
+	var _common = __webpack_require__(294);
+	
 	var _react = __webpack_require__(79);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactIscroll = __webpack_require__(297);
+	
+	var _reactIscroll2 = _interopRequireDefault(_reactIscroll);
+	
+	var _config = __webpack_require__(302);
+	
+	var _timg = __webpack_require__(303);
+	
+	var _timg2 = _interopRequireDefault(_timg);
+	
+	var _timg3 = __webpack_require__(304);
+	
+	var _timg4 = _interopRequireDefault(_timg3);
+	
+	var _timg5 = __webpack_require__(305);
+	
+	var _timg6 = _interopRequireDefault(_timg5);
+	
+	var _timg7 = __webpack_require__(306);
+	
+	var _timg8 = _interopRequireDefault(_timg7);
+	
+	var _timg9 = __webpack_require__(307);
+	
+	var _timg10 = _interopRequireDefault(_timg9);
+	
+	var _kuaibao = __webpack_require__(308);
+	
+	var _kuaibao2 = _interopRequireDefault(_kuaibao);
+	
+	var _maojin = __webpack_require__(309);
+	
+	var _maojin2 = _interopRequireDefault(_maojin);
+	
+	var _zixingche = __webpack_require__(310);
+	
+	var _zixingche2 = _interopRequireDefault(_zixingche);
+	
+	var _dianshi = __webpack_require__(311);
+	
+	var _dianshi2 = _interopRequireDefault(_dianshi);
+	
+	var _xie = __webpack_require__(312);
+	
+	var _xie2 = _interopRequireDefault(_xie);
+	
+	var _jingtiao = __webpack_require__(313);
+	
+	var _jingtiao2 = _interopRequireDefault(_jingtiao);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -33071,17 +33185,256 @@
 	    function IndexPage(props) {
 	        _classCallCheck(this, IndexPage);
 	
-	        return _possibleConstructorReturn(this, (IndexPage.__proto__ || Object.getPrototypeOf(IndexPage)).call(this, props));
+	        var _this = _possibleConstructorReturn(this, (IndexPage.__proto__ || Object.getPrototypeOf(IndexPage)).call(this, props));
+	
+	        _this.state = {
+	            pics: [_timg2.default, _timg4.default, _timg6.default, _timg8.default, _timg10.default],
+	            Shi: "",
+	            Fen: "",
+	            Miao: ""
+	        };
+	        _this.classifyList = [{ text: "京东超市", icon: "\uE62E", color: "#F0244D" }, { text: "全球购", icon: "\uE622", color: "#992DD1" }, { text: "服装城", icon: "\uE614", color: "#F52281" }, { text: "京东生鲜", icon: "\uE619", color: "#44C93E" }, { text: "京东到家", icon: "\uE616", color: "#1EB554" }, { text: "充值中心", icon: "\uE664", color: "#00BCF5" }, { text: "惠赚钱", icon: "\uE655", color: "#EE3802" }, { text: "领劵", icon: "\uE625", color: "#FFC429" }, { text: "物流查询", icon: "\uE618", color: "#09C997" }, { text: "我的关注", icon: "\uE60F", color: "#F66834" }];
+	        _this.seckillgoodsData = [{ src: _maojin2.default, nowPrice: "￥45", oldPrice: "￥69" }, { src: _zixingche2.default, nowPrice: "￥919", oldPrice: "￥998" }, { src: _dianshi2.default, nowPrice: "￥7288", oldPrice: "￥7988" }, { src: _xie2.default, nowPrice: "￥2000", oldPrice: "￥2222" }, { src: _maojin2.default, nowPrice: "￥380", oldPrice: "￥456" }, { src: _zixingche2.default, nowPrice: "￥29", oldPrice: "￥89" }, { src: _dianshi2.default, nowPrice: "￥10", oldPrice: "￥222" }, { src: _xie2.default, nowPrice: "￥5", oldPrice: "￥2000" }];
+	        return _this;
 	    }
 	
 	    _createClass(IndexPage, [{
+	        key: "countTime",
+	        value: function countTime() {
+	            var _this2 = this;
+	
+	            this.ds = setInterval(function () {
+	                var fDate = new Date('2017/1/7 22:00:00');
+	                var nDate = new Date();
+	                var rDate = fDate - nDate;
+	                var Day = Math.floor(rDate / 86400000);
+	                var Shi = Math.floor(rDate % 86400000 / 3600000);
+	                var Fen = Math.floor(rDate % 86400000 % 3600000 / 60000);
+	                var Miao = Math.floor(rDate % 86400000 % 3600000 % 60000 / 1000);
+	                if (rDate <= 1) {
+	                    clearInterval(_this2.ds);
+	                    return;
+	                }
+	                function biao(a) {
+	                    if (a < 10) {
+	                        a = '0' + a;
+	                    }
+	                    return a;
+	                }
+	                _this2.setState({
+	                    Shi: biao(Shi),
+	                    Fen: biao(Fen),
+	                    Miao: biao(Miao)
+	                });
+	            }, 1000);
+	        }
+	    }, {
 	        key: "render",
 	        value: function render() {
 	            return _react2.default.createElement(
 	                "div",
-	                null,
-	                "\u4E3B\u9875"
+	                { className: "indexPage", id: "index-page" },
+	                _react2.default.createElement(_common.Header, { title: "\u9996\u9875" }),
+	                _react2.default.createElement(
+	                    _common.Content,
+	                    { Hasfooter: true },
+	                    _react2.default.createElement(
+	                        _reactIscroll2.default,
+	                        { iScroll: IScroll, options: _config.ScrollOptions },
+	                        _react2.default.createElement(
+	                            "div",
+	                            null,
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "indexPage-content-top" },
+	                                _react2.default.createElement(
+	                                    "div",
+	                                    { className: "swiper" },
+	                                    _react2.default.createElement(
+	                                        "div",
+	                                        { className: "swiper-container", ref: "swiper-container" },
+	                                        _react2.default.createElement(
+	                                            "div",
+	                                            { className: "swiper-wrapper" },
+	                                            this.state.pics.map(function (ele, i) {
+	                                                return _react2.default.createElement(
+	                                                    "div",
+	                                                    { key: i, className: "swiper-slide" },
+	                                                    _react2.default.createElement("img", { src: ele })
+	                                                );
+	                                            })
+	                                        ),
+	                                        _react2.default.createElement("div", { ref: "pagination", className: "swiper-btns" })
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    "div",
+	                                    { className: "classify" },
+	                                    _react2.default.createElement(
+	                                        "ul",
+	                                        { className: "classify-ul" },
+	                                        this.classifyList.map(function (ele, i) {
+	                                            return _react2.default.createElement(
+	                                                "li",
+	                                                { key: i },
+	                                                _react2.default.createElement(
+	                                                    "i",
+	                                                    { className: "iconfont", style: { color: ele.color } },
+	                                                    ele.icon
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    "p",
+	                                                    null,
+	                                                    ele.text
+	                                                )
+	                                            );
+	                                        })
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    "div",
+	                                    { className: "firstNew" },
+	                                    _react2.default.createElement(
+	                                        "div",
+	                                        { className: "left" },
+	                                        _react2.default.createElement("img", { src: _kuaibao2.default })
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "div",
+	                                        { className: "middle" },
+	                                        _react2.default.createElement(
+	                                            "marquee",
+	                                            { behavior: "scroll", direction: "down", scrollamount: "10" },
+	                                            _react2.default.createElement(
+	                                                "span",
+	                                                null,
+	                                                "\u683C\u529B\u8868\u5F70\u5927\u4F1A\uFF0C\u6EE1\u51CF\u6700\u9AD8\u2026\u2026\uFF01\u8D70\u79C0\uFF0C\u4E0D\u4E00\u6837\u7684\u8D2D\u7269\uFF01"
+	                                            ),
+	                                            _react2.default.createElement(
+	                                                "span",
+	                                                null,
+	                                                "\u683C\u529B\u8868\u5F70\u5927\u4F1A\uFF0C\u6EE1\u51CF\u6700\u9AD8\u2026\u2026\uFF01\u8D70\u79C0\uFF0C\u4E0D\u4E00\u6837\u7684\u8D2D\u7269\uFF01"
+	                                            )
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "div",
+	                                        { className: "right" },
+	                                        "| ",
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            "\u66F4\u591A"
+	                                        )
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "indexPage-content-middle" },
+	                                _react2.default.createElement(
+	                                    "div",
+	                                    { className: "seckill" },
+	                                    _react2.default.createElement(
+	                                        "span",
+	                                        { className: "seckill-left" },
+	                                        "\u4EAC\u4E1C\u79D2\u6740"
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "span",
+	                                        { className: "seckill-time" },
+	                                        "22\u70B9\u573A"
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "span",
+	                                        { className: "seckill-lastTime" },
+	                                        _react2.default.createElement(
+	                                            "span",
+	                                            null,
+	                                            this.state.Shi,
+	                                            " \u5C0F\u65F6 ",
+	                                            this.state.Fen,
+	                                            " \u5206 ",
+	                                            this.state.Miao,
+	                                            " \u79D2"
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "span",
+	                                        { className: "seckill-right" },
+	                                        "\u79D2\u6740\u8FCE\u65B0\u597D\u8D27 ",
+	                                        _react2.default.createElement(
+	                                            "i",
+	                                            { className: "jiao" },
+	                                            ">"
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    "div",
+	                                    { className: "goods-wrap" },
+	                                    _react2.default.createElement(
+	                                        "div",
+	                                        { className: "seckill-goods" },
+	                                        this.seckillgoodsData.map(function (ele, i) {
+	                                            return _react2.default.createElement(
+	                                                "dl",
+	                                                { key: i },
+	                                                _react2.default.createElement(
+	                                                    "dt",
+	                                                    null,
+	                                                    _react2.default.createElement("img", { src: ele.src })
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    "dd",
+	                                                    { className: "np" },
+	                                                    ele.nowPrice
+	                                                ),
+	                                                _react2.default.createElement(
+	                                                    "dd",
+	                                                    null,
+	                                                    _react2.default.createElement(
+	                                                        "del",
+	                                                        null,
+	                                                        ele.oldPrice
+	                                                    )
+	                                                )
+	                                            );
+	                                        })
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "indexPage-content-bottom" },
+	                                _react2.default.createElement("img", { src: _jingtiao2.default })
+	                            )
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(_common.Footer, { active: "0" })
 	            );
+	        }
+	    }, {
+	        key: "componentDidMount",
+	        value: function componentDidMount() {
+	            this.swiper = new Swiper(this.refs["swiper-container"], {
+	                pagination: this.refs.pagination,
+	                slidesPerView: "1",
+	                loop: true,
+	                autoplay: 1000
+	            });
+	        }
+	    }, {
+	        key: "componentWillMount",
+	        value: function componentWillMount() {
+	            this.countTime();
+	        }
+	    }, {
+	        key: "componentDidUpdate",
+	        value: function componentDidUpdate() {
+	            this.swiper.update();
+	            this.swiper.reLoop();
 	        }
 	    }]);
 	
@@ -33092,197 +33445,9 @@
 
 /***/ },
 /* 293 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _common = __webpack_require__(294);
-	
-	var _ProductList = __webpack_require__(296);
-	
-	var _react = __webpack_require__(79);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _config = __webpack_require__(297);
-	
-	var _reactIscroll = __webpack_require__(298);
-	
-	var _reactIscroll2 = _interopRequireDefault(_reactIscroll);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	console.log(_reactIscroll2.default);
-	
-	var ClassList = function (_Component) {
-	    _inherits(ClassList, _Component);
-	
-	    function ClassList(props) {
-	        _classCallCheck(this, ClassList);
-	
-	        return _possibleConstructorReturn(this, (ClassList.__proto__ || Object.getPrototypeOf(ClassList)).call(this, props));
-	    }
-	
-	    _createClass(ClassList, [{
-	        key: "handeClick",
-	        value: function handeClick(id) {
-	            console.log(id);
-	            this.props.changeclassID(id);
-	        }
-	    }, {
-	        key: "render",
-	        value: function render() {
-	            var _this2 = this;
-	
-	            return _react2.default.createElement(
-	                "ul",
-	                null,
-	                this.props.classData.map(function (ele, index) {
-	                    return _react2.default.createElement(
-	                        "li",
-	                        { onClick: _this2.handeClick.bind(_this2, ele.classID), key: index },
-	                        ele.className
-	                    );
-	                })
-	            );
-	        }
-	    }]);
-	
-	    return ClassList;
-	}(_react.Component);
-	
-	var ListPage = function (_Component2) {
-	    _inherits(ListPage, _Component2);
-	
-	    function ListPage(props) {
-	        _classCallCheck(this, ListPage);
-	
-	        var _this3 = _possibleConstructorReturn(this, (ListPage.__proto__ || Object.getPrototypeOf(ListPage)).call(this, props));
-	
-	        _this3.state = {
-	            classData: [],
-	            listData: []
-	        };
-	        _this3.classID = undefined;
-	        _this3.linenumber = 5;
-	        _this3.pageCode = 0;
-	        _this3.refresh = false;
-	        $.get("http://datainfo.duapp.com/shopdata/getclass.php", function (data) {
-	            if (typeof data === "string") {
-	                data = JSON.parse(data);
-	            }
-	            _this3.setState({
-	                classData: data
-	            });
-	        }, "json");
-	        _this3.getProductData();
-	        return _this3;
-	    }
-	
-	    _createClass(ListPage, [{
-	        key: "getProductData",
-	        value: function getProductData() {
-	            var _this4 = this;
-	
-	            $.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?", {
-	                "classID": this.classID,
-	                "linenumber": this.linenumber,
-	                "pageCode": this.pageCode
-	            }, function (data) {
-	                if (data) {
-	                    _this4.setState({
-	                        listData: _this4.pageCode == 0 ? data : _this4.state.listData.concat(data)
-	                    });
-	                }
-	            });
-	        }
-	    }, {
-	        key: "onScrollEnd",
-	        value: function onScrollEnd(Scroll) {
-	            if (this.refresh) {
-	                this.pageCode = 0;
-	                this.getProductData();
-	                this.refresh = false;
-	            } else if (Scroll.y - Scroll.maxScrollY <= 20) {
-	                console.log("加载更多");
-	                this.pageCode++;
-	                this.getProductData();
-	                this.refresh = false;
-	            }
-	        }
-	    }, {
-	        key: "onScroll",
-	        value: function onScroll(Scroll) {
-	            if (Scroll.y > 50) {
-	                console.log("刷新");
-	                this.refresh = true;
-	            }
-	        }
-	    }, {
-	        key: "changeclassID",
-	        value: function changeclassID(id) {
-	            this.classID = id;
-	            this.pageCode = 0;
-	            console.log(id);
-	            this.getProductData();
-	        }
-	    }, {
-	        key: "render",
-	        value: function render() {
-	            var _this5 = this;
-	
-	            return _react2.default.createElement(
-	                "div",
-	                { className: "page", id: "list-page" },
-	                _react2.default.createElement(_common.Header, { title: "\u5217\u8868", right: "\u641C\u7D20", left: "<" }),
-	                _react2.default.createElement(
-	                    _common.SubHeader,
-	                    null,
-	                    _react2.default.createElement(ClassList, { changeclassID: function changeclassID(id) {
-	                            return _this5.changeclassID(id);
-	                        }, classData: this.state.classData })
-	                ),
-	                _react2.default.createElement(
-	                    _common.Content,
-	                    { Hasheader: true, Hasfooter: true },
-	                    _react2.default.createElement(
-	                        _reactIscroll2.default,
-	                        { iScroll: IScroll, options: _config.ScrollOptions, onScroll: function onScroll(myScroll) {
-	                                return _this5.onScroll(myScroll);
-	                            },
-	                            onScrollEnd: function onScrollEnd(myScroll) {
-	                                return _this5.onScrollEnd(myScroll);
-	                            } },
-	                        _react2.default.createElement(_ProductList.ProductList, { listData: this.state.listData })
-	                    )
-	                ),
-	                _react2.default.createElement(_common.Footer, null)
-	            );
-	        }
-	    }]);
-	
-	    return ListPage;
-	}(_react.Component);
-	
-	ClassList.defaultProps = {
-	    classData: []
-	};
-	ListPage.defaultProps = {
-	    listData: ["我是商品1", "我是商品2", "我是商品3"]
-	};
-	exports.default = ListPage;
+	// removed by extract-text-webpack-plugin
 
 /***/ },
 /* 294 */
@@ -33302,6 +33467,8 @@
 	var _react = __webpack_require__(79);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _tools = __webpack_require__(296);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -33332,29 +33499,27 @@
 	                _react2.default.createElement(
 	                    "ul",
 	                    { className: "header-list" },
-	                    _react2.default.createElement(
+	                    this.props.hasLeft ? _react2.default.createElement(
 	                        "li",
 	                        { className: "header-btn" },
 	                        _react2.default.createElement(
 	                            "a",
-	                            { href: "#" },
+	                            { href: "javascript:;", onClick: function onClick() {
+	                                    return window.history.go(-1);
+	                                } },
 	                            this.props.left
 	                        )
-	                    ),
+	                    ) : _react2.default.createElement("li", { className: "side" }),
 	                    _react2.default.createElement(
 	                        "li",
 	                        { className: "header-tit" },
 	                        this.props.title
 	                    ),
-	                    _react2.default.createElement(
+	                    this.props.hasRight ? _react2.default.createElement(
 	                        "li",
 	                        { className: "header-btn" },
-	                        _react2.default.createElement(
-	                            "a",
-	                            { href: "#" },
-	                            this.props.right
-	                        )
-	                    )
+	                        this.props.right
+	                    ) : _react2.default.createElement("li", { className: "side" })
 	                )
 	            );
 	        }
@@ -33373,8 +33538,19 @@
 	    }
 	
 	    _createClass(Footer, [{
+	        key: "checkUser",
+	        value: function checkUser(ev) {
+	            if (_tools.Tools.getUserId()) {
+	                ev.target.href = "#/more";
+	            } else {
+	                window.location.hash = "#/login";
+	            }
+	        }
+	    }, {
 	        key: "render",
 	        value: function render() {
+	            var _this3 = this;
+	
 	            return _react2.default.createElement(
 	                "div",
 	                { className: "footer" },
@@ -33384,8 +33560,23 @@
 	                    this.props.footerData.map(function (ele, index) {
 	                        return _react2.default.createElement(
 	                            "li",
-	                            { key: index },
-	                            ele
+	                            { key: index, className: index == _this3.props.active ? "active" : "", onClick: index == 2 ? function (ev) {
+	                                    return _this3.checkUser(ev);
+	                                } : "" },
+	                            _react2.default.createElement(
+	                                "a",
+	                                { href: ele.path },
+	                                _react2.default.createElement(
+	                                    "i",
+	                                    { className: "iconfont" },
+	                                    ele.icon
+	                                ),
+	                                _react2.default.createElement(
+	                                    "p",
+	                                    null,
+	                                    ele.text
+	                                )
+	                            )
 	                        );
 	                    })
 	                )
@@ -33451,7 +33642,7 @@
 	}(_react.Component);
 	
 	Footer.defaultProps = {
-	    footerData: ["首页", "列表", "活动", "购物车", "我的"]
+	    footerData: [{ text: "首页", icon: "\uE601", path: "#/" }, { text: "分类", icon: "\uE603", path: "#/list" }, { text: "购物车", icon: "\uE600", path: "javascript:;" }, { text: "我的", icon: "\uE65D", path: "#/myShow" }, { text: "更多", icon: "\uE602", path: "#/more" }]
 	};
 	exports.Header = Header;
 	exports.Footer = Footer;
@@ -33466,88 +33657,62 @@
 
 /***/ },
 /* 296 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	exports.ProductList = undefined;
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(79);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Created by Administrator on 2016/12/30.
-	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
-	
-	
-	var ProductList = function (_Component) {
-	    _inherits(ProductList, _Component);
-	
-	    function ProductList(props) {
-	        _classCallCheck(this, ProductList);
-	
-	        return _possibleConstructorReturn(this, (ProductList.__proto__ || Object.getPrototypeOf(ProductList)).call(this, props));
+	/**
+	 * Created by Administrator on 2017/1/4.
+	 */
+	var Tools = {
+	    getUserId: function getUserId() {
+	        var Info = window.sessionStorage.getItem("userInfo") ? JSON.parse(window.sessionStorage.getItem("userInfo")) : JSON.parse(window.localStorage.getItem("userInfo"));
+	        if (Info) {
+	            var useID = Info.userID;
+	            return useID;
+	        } else {
+	            alert("请先登录");
+	        }
+	    },
+	    setHistroy: function setHistroy(val) {
+	        //进行浏览记录的存储
+	        if (window.localStorage.getItem("histroy")) {
+	            var a = window.localStorage.getItem("histroy");
+	            if (a.indexOf(val + "|") < 0) {
+	                var b = val + "|" + a;
+	                window.localStorage.setItem("histroy", b);
+	            } else {
+	                // var index = a.indexOf(val);
+	                var arr1 = a.replace("|" + val + "|", "|"); //删除重复字符之后的字符串
+	                var d = val + "|";
+	                var newa = d.concat(arr1);
+	                window.localStorage.setItem("histroy", newa);
+	            }
+	        } else {
+	            window.localStorage.setItem("histroy", val + "|");
+	        }
+	    },
+	    getHistroy: function getHistroy(val) {
+	        if (window.localStorage.getItem(val)) {
+	            var hisStr = window.localStorage.getItem(val);
+	            var arr = hisStr.split("|");
+	            return arr;
+	        }
+	    },
+	    delLocalStorage: function delLocalStorage(val) {
+	        window.localStorage.removeItem(val);
+	        document.location.reload();
 	    }
 	
-	    _createClass(ProductList, [{
-	        key: "render",
-	        value: function render() {
-	            return _react2.default.createElement(
-	                "ul",
-	                null,
-	                this.props.listData.map(function (ele, index) {
-	                    return _react2.default.createElement(
-	                        "li",
-	                        { key: index },
-	                        _react2.default.createElement("img", { src: ele.goodsListImg, alt: "" }),
-	                        _react2.default.createElement(
-	                            "p",
-	                            null,
-	                            ele.goodsName
-	                        )
-	                    );
-	                })
-	            );
-	        }
-	    }]);
+	};
 	
-	    return ProductList;
-	}(_react.Component);
-	
-	exports.ProductList = ProductList;
+	exports.Tools = Tools;
 
 /***/ },
 /* 297 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	/**
-	 * Created by Administrator on 2017/1/3.
-	 */
-	var ScrollOptions = {
-	  probeType: 2,
-	  scrollbars: true
-	};
-	exports.ScrollOptions = ScrollOptions;
-
-/***/ },
-/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -33566,7 +33731,7 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _deepEqual = __webpack_require__(299);
+	var _deepEqual = __webpack_require__(298);
 	
 	var _deepEqual2 = _interopRequireDefault(_deepEqual);
 	
@@ -33851,18 +34016,18 @@
 	
 	
 	if (process.env.NODE_ENV != "production") {
-	  var propTypesMaker = __webpack_require__(302).default;
+	  var propTypesMaker = __webpack_require__(301).default;
 	  ReactIScroll.propTypes = propTypesMaker(availableEventNames);
 	}
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15)))
 
 /***/ },
-/* 299 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var pSlice = Array.prototype.slice;
-	var objectKeys = __webpack_require__(300);
-	var isArguments = __webpack_require__(301);
+	var objectKeys = __webpack_require__(299);
+	var isArguments = __webpack_require__(300);
 	
 	var deepEqual = module.exports = function (actual, expected, opts) {
 	  if (!opts) opts = {};
@@ -33957,7 +34122,7 @@
 
 
 /***/ },
-/* 300 */
+/* 299 */
 /***/ function(module, exports) {
 
 	exports = module.exports = typeof Object.keys === 'function'
@@ -33972,7 +34137,7 @@
 
 
 /***/ },
-/* 301 */
+/* 300 */
 /***/ function(module, exports) {
 
 	var supportsArgumentsClass = (function(){
@@ -33998,7 +34163,7 @@
 
 
 /***/ },
-/* 302 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34147,7 +34312,92 @@
 	};
 
 /***/ },
+/* 302 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	/**
+	 * Created by Administrator on 2017/1/3.
+	 */
+	var ScrollOptions = {
+	    probeType: 2,
+	    scrollbars: true,
+	    click: true
+	};
+	exports.ScrollOptions = ScrollOptions;
+
+/***/ },
 /* 303 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "afa9b6d3b6c9998a814e906c56f5c610.jpg";
+
+/***/ },
+/* 304 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "def70f52188f7c40dc7686c8c645d019.jpg";
+
+/***/ },
+/* 305 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "ca8bbc76352776822a86a9595a98b74d.jpg";
+
+/***/ },
+/* 306 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "60d9561be6000c4e7e51ff55292cf1c7.jpg";
+
+/***/ },
+/* 307 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "fc7b65aa04f993fdbf9330c647c502cd.jpg";
+
+/***/ },
+/* 308 */
+/***/ function(module, exports) {
+
+	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAAVCAYAAACE5YosAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAKTWlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjanVN3WJP3Fj7f92UPVkLY8LGXbIEAIiOsCMgQWaIQkgBhhBASQMWFiApWFBURnEhVxILVCkidiOKgKLhnQYqIWotVXDjuH9yntX167+3t+9f7vOec5/zOec8PgBESJpHmomoAOVKFPDrYH49PSMTJvYACFUjgBCAQ5svCZwXFAADwA3l4fnSwP/wBr28AAgBw1S4kEsfh/4O6UCZXACCRAOAiEucLAZBSAMguVMgUAMgYALBTs2QKAJQAAGx5fEIiAKoNAOz0ST4FANipk9wXANiiHKkIAI0BAJkoRyQCQLsAYFWBUiwCwMIAoKxAIi4EwK4BgFm2MkcCgL0FAHaOWJAPQGAAgJlCLMwAIDgCAEMeE80DIEwDoDDSv+CpX3CFuEgBAMDLlc2XS9IzFLiV0Bp38vDg4iHiwmyxQmEXKRBmCeQinJebIxNI5wNMzgwAABr50cH+OD+Q5+bk4eZm52zv9MWi/mvwbyI+IfHf/ryMAgQAEE7P79pf5eXWA3DHAbB1v2upWwDaVgBo3/ldM9sJoFoK0Hr5i3k4/EAenqFQyDwdHAoLC+0lYqG9MOOLPv8z4W/gi372/EAe/tt68ABxmkCZrcCjg/1xYW52rlKO58sEQjFu9+cj/seFf/2OKdHiNLFcLBWK8ViJuFAiTcd5uVKRRCHJleIS6X8y8R+W/QmTdw0ArIZPwE62B7XLbMB+7gECiw5Y0nYAQH7zLYwaC5EAEGc0Mnn3AACTv/mPQCsBAM2XpOMAALzoGFyolBdMxggAAESggSqwQQcMwRSswA6cwR28wBcCYQZEQAwkwDwQQgbkgBwKoRiWQRlUwDrYBLWwAxqgEZrhELTBMTgN5+ASXIHrcBcGYBiewhi8hgkEQcgIE2EhOogRYo7YIs4IF5mOBCJhSDSSgKQg6YgUUSLFyHKkAqlCapFdSCPyLXIUOY1cQPqQ28ggMor8irxHMZSBslED1AJ1QLmoHxqKxqBz0XQ0D12AlqJr0Rq0Hj2AtqKn0UvodXQAfYqOY4DRMQ5mjNlhXIyHRWCJWBomxxZj5Vg1Vo81Yx1YN3YVG8CeYe8IJAKLgBPsCF6EEMJsgpCQR1hMWEOoJewjtBK6CFcJg4Qxwicik6hPtCV6EvnEeGI6sZBYRqwm7iEeIZ4lXicOE1+TSCQOyZLkTgohJZAySQtJa0jbSC2kU6Q+0hBpnEwm65Btyd7kCLKArCCXkbeQD5BPkvvJw+S3FDrFiOJMCaIkUqSUEko1ZT/lBKWfMkKZoKpRzame1AiqiDqfWkltoHZQL1OHqRM0dZolzZsWQ8ukLaPV0JppZ2n3aC/pdLoJ3YMeRZfQl9Jr6Afp5+mD9HcMDYYNg8dIYigZaxl7GacYtxkvmUymBdOXmchUMNcyG5lnmA+Yb1VYKvYqfBWRyhKVOpVWlX6V56pUVXNVP9V5qgtUq1UPq15WfaZGVbNQ46kJ1Bar1akdVbupNq7OUndSj1DPUV+jvl/9gvpjDbKGhUaghkijVGO3xhmNIRbGMmXxWELWclYD6yxrmE1iW7L57Ex2Bfsbdi97TFNDc6pmrGaRZp3mcc0BDsax4PA52ZxKziHODc57LQMtPy2x1mqtZq1+rTfaetq+2mLtcu0W7eva73VwnUCdLJ31Om0693UJuja6UbqFutt1z+o+02PreekJ9cr1Dund0Uf1bfSj9Rfq79bv0R83MDQINpAZbDE4Y/DMkGPoa5hpuNHwhOGoEctoupHEaKPRSaMnuCbuh2fjNXgXPmasbxxirDTeZdxrPGFiaTLbpMSkxeS+Kc2Ua5pmutG003TMzMgs3KzYrMnsjjnVnGueYb7ZvNv8jYWlRZzFSos2i8eW2pZ8ywWWTZb3rJhWPlZ5VvVW16xJ1lzrLOtt1ldsUBtXmwybOpvLtqitm63Edptt3xTiFI8p0in1U27aMez87ArsmuwG7Tn2YfYl9m32zx3MHBId1jt0O3xydHXMdmxwvOuk4TTDqcSpw+lXZxtnoXOd8zUXpkuQyxKXdpcXU22niqdun3rLleUa7rrStdP1o5u7m9yt2W3U3cw9xX2r+00umxvJXcM970H08PdY4nHM452nm6fC85DnL152Xlle+70eT7OcJp7WMG3I28Rb4L3Le2A6Pj1l+s7pAz7GPgKfep+Hvqa+It89viN+1n6Zfgf8nvs7+sv9j/i/4XnyFvFOBWABwQHlAb2BGoGzA2sDHwSZBKUHNQWNBbsGLww+FUIMCQ1ZH3KTb8AX8hv5YzPcZyya0RXKCJ0VWhv6MMwmTB7WEY6GzwjfEH5vpvlM6cy2CIjgR2yIuB9pGZkX+X0UKSoyqi7qUbRTdHF09yzWrORZ+2e9jvGPqYy5O9tqtnJ2Z6xqbFJsY+ybuIC4qriBeIf4RfGXEnQTJAntieTE2MQ9ieNzAudsmjOc5JpUlnRjruXcorkX5unOy553PFk1WZB8OIWYEpeyP+WDIEJQLxhP5aduTR0T8oSbhU9FvqKNolGxt7hKPJLmnVaV9jjdO31D+miGT0Z1xjMJT1IreZEZkrkj801WRNberM/ZcdktOZSclJyjUg1plrQr1zC3KLdPZisrkw3keeZtyhuTh8r35CP5c/PbFWyFTNGjtFKuUA4WTC+oK3hbGFt4uEi9SFrUM99m/ur5IwuCFny9kLBQuLCz2Lh4WfHgIr9FuxYji1MXdy4xXVK6ZHhp8NJ9y2jLspb9UOJYUlXyannc8o5Sg9KlpUMrglc0lamUycturvRauWMVYZVkVe9ql9VbVn8qF5VfrHCsqK74sEa45uJXTl/VfPV5bdra3kq3yu3rSOuk626s91m/r0q9akHV0IbwDa0b8Y3lG19tSt50oXpq9Y7NtM3KzQM1YTXtW8y2rNvyoTaj9nqdf13LVv2tq7e+2Sba1r/dd3vzDoMdFTve75TsvLUreFdrvUV99W7S7oLdjxpiG7q/5n7duEd3T8Wej3ulewf2Re/ranRvbNyvv7+yCW1SNo0eSDpw5ZuAb9qb7Zp3tXBaKg7CQeXBJ9+mfHvjUOihzsPcw83fmX+39QjrSHkr0jq/dawto22gPaG97+iMo50dXh1Hvrf/fu8x42N1xzWPV56gnSg98fnkgpPjp2Snnp1OPz3Umdx590z8mWtdUV29Z0PPnj8XdO5Mt1/3yfPe549d8Lxw9CL3Ytslt0utPa49R35w/eFIr1tv62X3y+1XPK509E3rO9Hv03/6asDVc9f41y5dn3m978bsG7duJt0cuCW69fh29u0XdwruTNxdeo94r/y+2v3qB/oP6n+0/rFlwG3g+GDAYM/DWQ/vDgmHnv6U/9OH4dJHzEfVI0YjjY+dHx8bDRq98mTOk+GnsqcTz8p+Vv9563Or59/94vtLz1j82PAL+YvPv655qfNy76uprzrHI8cfvM55PfGm/K3O233vuO+638e9H5ko/ED+UPPR+mPHp9BP9z7nfP78L/eE8/sl0p8zAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAeDSURBVHja7JpbTFRXF8d/c8PhMiAqBISgNXhrGigVUFARgzUleMMgeMGgIQpKhWijHQoBadL40rRFbCo2pjbUVE1tEDS1tDSRcBGjaW0waXkQUUCLJBSBQRhm5ns4Zw4zwwwCylcMrJdz9uXsvfZet/9aMzKTyWRimqYMKV83hgerq+nLzwfA+M8/k59hFxfh8fHHqN577z9nR/a6WXj3unUYnzx57SxL5uOD+6+/Tg4Lb21tfeHErKwsHjx4QHp6OgCxsbEOFFrQaE9PTzo7O9HpdNJYc3MzWVlZAPj7+3Pq1KkxMevn5zdqYbvX1WF8/BiAnq1bhUufNUsYq6pCf+MGuoyMkY3z889RvfsuAM+iolCGhqJ4550XeiDLp5lME+SNukNC0Pz++wv7rAS+efPmUW9w+vRpq6ctbdq0CYC8vDyKioooKyuzO+/Ro0dj2hfg9u3b474YxZtvIvPyGrI4Dw8UISFDAtHpMP7999D8kBBkM2cOtd96C2V4OE7btwNg+OsvTBbKLNNoUCxciOnZM7sCZ5I4Uvk0jJmCoC07O5umpqZXsuDGjRul93379rFt2zYA2tra0Gq1KJUCTiwsLESj0XD9+nUMBgMAERERzBLd7nhInZsrGFNHh2R1AIqwMFyOH0c+b97Qwd9+G7eSEqltaGigR7RewGoMwOWLL9D/+KPU7svPx3DvHvLFiwFw2roVxcKFMDAwJp7v3LnD3Llzpbavr++o3Lg9F27Zb/lu6d6V5th64cKFIbOXy1GpVKNi2Iz5BsSDbtmyxYp58wEuX76MyWRiw4YNAISHhwOQmpoqfbtu3TqWLl06fre9YIGA3kVBy8W9Z6Sk0LN7txTDNaWlDNbVofvoI6H988/D1nq2di3OBQWooqIEHJCUxIykpGHzZogK7bR9O8bWVvSVlWMWuCWNRuCWArSM1+anPQUYMS2LjIwkMzNzVAybQdmePXvsjj8WgdPVq1eRyWRER0cDcP/+fSuFMXsBd3f3YWt4eHgAMHv27JGZcXYWLNvJSbDaxkaBx/ffR9TKIUUdGMD09KljRX76FPr7h9qdndao29MTmZcXz4uLAaSnqbd3TALfv3//KwNu9gQ8KoFXV1dTbQs6xknnzp0TQMzgoIT2HVFeXp7d/p07dwJw5MiRkQGJCLIMokuX+gMDkWk0yMQMYhhok8nAxQX5G28IHqKpCdRqZG5u0nzXr7/GYGGNrg5A6/MvvwSg/6uvJi41tRGsPQt3pBTToG0qgrbU1FSSLOJTZWUlXV1dhIaGAhAQEEBmZibNzc1WeXhVVRUdojUFBQURGBiIt7e31QZ79+4FYOXKldy9e5c5c+YAECXGxoSEBPR6PQAnTpzAzc1NSr88PDyIiYnBzcLSRsyB//hDsPB791CKvAM4a7UoV6ywPrgNaFMsWIBaDGN9ubloamuRKRTSuP6nn5BbnK3/u+9Ar0f/22/CeqGhqLOyMLa0TLjQbGO47ftI7l1pvliNCHQAzp49i06nk3JqPz8/CcTNFN2mn58f7e3tlIiXlpSUxJo1a4Zt4OPjA0BJSQkXL14kJSVF+l7wpjJprpeXF15eXhw6dEhwm66u7Nq1C4XFxY9EfdnZQ4jdoqii++ADcHJCsWiRsG5xMcaWFnp277ZeQIzZJr2evvx8nOLiUEZECOH/hx9QHzw4FNN7elCnp6OvqJAwASYTg/X1k8KSHSmFFMMbGhqkzt7eXsLCwphnkcbYo/j4eM6fPw9ATU0NR48edYjia2pqUCgUxMfHv7CaFhkZCUBtbS0NDQ0EBwe/1OFNXV0AqEQlMOl0yP39Ua1fLwhTPIMl6UtLJYRu15vcuIEhOhq1Vit+oEdfU4OpvX3C07KRUjNHwjfPn47hUzGGA1SIrsnsZs2x2kxGo1GwEov8PCAggLi4OADKy8upr69n+fLldvPMlpYWEhIS8Pf3t1rTXHSxXPvAgQMA3Lx5k2vXrr20hQMo167FSayp63JzUQQFof7wQ+G8KhX93347rPxpErGFXTIa0Wm1uH3/vZl5ehITx8zXePJwW5dtr+1ovhKgu7ub8vJyaXDHjh0EBwdL7ri5uZm2tjaUSiXLli2zWsicZt26dYvi4uJhAj9z5gwA8+fPl2Kz4AH1lJaWYjAYWCTG1iVLlgBIxZfk5GQuXbpEWlra6PJwB6SKjcX5k0/o/+YbYe+yMvTl5Zj+/Vconhw+jDImBt3hw1KlTrV+PYoRQpo8IABVbKxUO0cuxzk3l+effioAxz//nNA83BagOSrG2LaVAFeuXGH16tXDhGgumhw7doyQkBASExOtLNQSxBUWFpKTkyPl76tWraK2tlaqohUVFeHq6ip919jYSEVFBcnJyVLRxhacZWRk8PDhQ06ePAlAQUHB+Kx7xQr6tFoJYInggn7x1zp9RQXqtDTkIpA0dHTg8tlnYDQyWFdnt/CiWLwY45Mn9OXkSLn8jIMHpdx+tAJ/mUKLbYy2zMcdtad/D/8/kdzXF80vv/z3fLxuF+d8/Dgyb29kNvn+pBW0jw9yHx+cx+mdXjXJpv/TNrXofwMAAP71MdEkh0oAAAAASUVORK5CYII="
+
+/***/ },
+/* 309 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c5a27f65f1cfdce0bd3b64541e04848d.png";
+
+/***/ },
+/* 310 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "9c0ba8e9a402f5feb12cd484b08c9214.png";
+
+/***/ },
+/* 311 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "1a34db5d3784cfb95365cc631ea5cbcc.png";
+
+/***/ },
+/* 312 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "d91c79eba5eb36e81b7e3974a3ec06d0.jpg";
+
+/***/ },
+/* 313 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "8054206965a20a60c84deb45e93eeb5e.png";
+
+/***/ },
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34158,9 +34408,369 @@
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
+	__webpack_require__(315);
+	
+	var _common = __webpack_require__(294);
+	
+	var _ProductList = __webpack_require__(316);
+	
 	var _react = __webpack_require__(79);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _loading = __webpack_require__(317);
+	
+	var _loading2 = _interopRequireDefault(_loading);
+	
+	var _config = __webpack_require__(302);
+	
+	var _reactIscroll = __webpack_require__(297);
+	
+	var _reactIscroll2 = _interopRequireDefault(_reactIscroll);
+	
+	var _tools = __webpack_require__(296);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var ClassList = function (_Component) {
+	    _inherits(ClassList, _Component);
+	
+	    function ClassList(props) {
+	        _classCallCheck(this, ClassList);
+	
+	        return _possibleConstructorReturn(this, (ClassList.__proto__ || Object.getPrototypeOf(ClassList)).call(this, props));
+	    }
+	
+	    _createClass(ClassList, [{
+	        key: "handeClick",
+	        value: function handeClick(id) {
+	            console.log(id);
+	            this.props.changeclassID(id);
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            var _this2 = this;
+	
+	            return _react2.default.createElement(
+	                "ul",
+	                null,
+	                this.props.classData.map(function (ele, index) {
+	                    return _react2.default.createElement(
+	                        "li",
+	                        { onClick: _this2.handeClick.bind(_this2, ele.classID), key: index },
+	                        _react2.default.createElement(
+	                            "p",
+	                            null,
+	                            ele.className
+	                        )
+	                    );
+	                })
+	            );
+	        }
+	    }]);
+	
+	    return ClassList;
+	}(_react.Component);
+	
+	var ListPage = function (_Component2) {
+	    _inherits(ListPage, _Component2);
+	
+	    function ListPage(props) {
+	        _classCallCheck(this, ListPage);
+	
+	        var _this3 = _possibleConstructorReturn(this, (ListPage.__proto__ || Object.getPrototypeOf(ListPage)).call(this, props));
+	
+	        _this3.state = {
+	            classData: [],
+	            listData: []
+	        };
+	        _this3.classID = undefined;
+	        _this3.linenumber = 5;
+	        _this3.pageCode = 0;
+	        _this3.refresh = false;
+	        $.get("http://datainfo.duapp.com/shopdata/getclass.php", function (data) {
+	            if (typeof data === "string") {
+	                data = JSON.parse(data);
+	            }
+	            _this3.setState({
+	                classData: data
+	            });
+	        }, "json");
+	        _this3.getProductData();
+	        return _this3;
+	    }
+	
+	    _createClass(ListPage, [{
+	        key: "getProductData",
+	        value: function getProductData() {
+	            var _this4 = this;
+	
+	            $("#loading").show();
+	            $.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?", {
+	                "classID": this.classID,
+	                "linenumber": this.linenumber,
+	                "pageCode": this.pageCode
+	            }, function (data) {
+	                if (data) {
+	                    _this4.setState({
+	                        listData: _this4.pageCode == 0 ? data : _this4.state.listData.concat(data)
+	                    });
+	                }
+	            });
+	            $("#loading").fadeOut();
+	        }
+	    }, {
+	        key: "onScrollEnd",
+	        value: function onScrollEnd(Scroll) {
+	            if (this.refresh) {
+	                this.pageCode = 0;
+	                this.getProductData();
+	                that.canreLoad = false;
+	
+	                this.refresh = false;
+	            } else if (Scroll.y - Scroll.maxScrollY <= 20) {
+	                console.log("加载更多");
+	                this.pageCode++;
+	                this.getProductData();
+	                this.refresh = false;
+	            }
+	        }
+	    }, {
+	        key: "onScroll",
+	        value: function onScroll(Scroll) {
+	            console.log(1);
+	            if (Scroll.y > 50) {
+	                console.log("刷新");
+	                $(".scrollText").show();
+	                this.refresh = true;
+	            }
+	        }
+	    }, {
+	        key: "changeclassID",
+	        value: function changeclassID(id) {
+	            this.classID = id;
+	            this.pageCode = 0;
+	            console.log(id);
+	            this.getProductData();
+	        }
+	    }, {
+	        key: "checkUser",
+	        value: function checkUser(ev) {
+	            if (_tools.Tools.getUserId()) {
+	                ev.target.href = "#/more";
+	            } else {
+	                ev.target.href = "#/login";
+	            }
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            var _this5 = this;
+	
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "page", id: "list-page" },
+	                _react2.default.createElement(_common.Header, { hasLeft: true, hasRight: true, title: "\u5217\u8868", right: _react2.default.createElement(
+	                        "a",
+	                        { onClick: function onClick(ev) {
+	                                return _this5.checkUser(ev);
+	                            }, className: "iconfont" },
+	                        "\uE608"
+	                    ), left: "<" }),
+	                _react2.default.createElement(
+	                    _common.SubHeader,
+	                    null,
+	                    _react2.default.createElement(ClassList, { changeclassID: function changeclassID(id) {
+	                            return _this5.changeclassID(id);
+	                        }, classData: this.state.classData })
+	                ),
+	                _react2.default.createElement(
+	                    _common.Content,
+	                    { Hasheader: true, Hasfooter: true },
+	                    _react2.default.createElement(
+	                        "p",
+	                        { className: "scrollText" },
+	                        "\u4E0B\u62C9\u5237\u65B0"
+	                    ),
+	                    _react2.default.createElement(
+	                        _reactIscroll2.default,
+	                        { iScroll: IScroll, options: _config.ScrollOptions, onScroll: function onScroll(myScroll) {
+	                                return _this5.onScroll(myScroll);
+	                            },
+	                            onScrollEnd: function onScrollEnd(myScroll) {
+	                                return _this5.onScrollEnd(myScroll);
+	                            } },
+	                        _react2.default.createElement(_ProductList.ProductList, { listData: this.state.listData })
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { id: "loading" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "loadingImg" },
+	                            _react2.default.createElement("img", { src: _loading2.default })
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(_common.Footer, { active: "1" })
+	            );
+	        }
+	    }]);
+	
+	    return ListPage;
+	}(_react.Component);
+	
+	ClassList.defaultProps = {
+	    classData: []
+	};
+	ListPage.defaultProps = {
+	    listData: ["我是商品1", "我是商品2", "我是商品3"]
+	};
+	exports.default = ListPage;
+
+/***/ },
+/* 315 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 316 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.ProductList = undefined;
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(79);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(236);
+	
+	var _tools = __webpack_require__(296);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Created by Administrator on 2016/12/30.
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+	
+	
+	var ProductList = function (_Component) {
+	    _inherits(ProductList, _Component);
+	
+	    function ProductList(props) {
+	        _classCallCheck(this, ProductList);
+	
+	        return _possibleConstructorReturn(this, (ProductList.__proto__ || Object.getPrototypeOf(ProductList)).call(this, props));
+	    }
+	
+	    _createClass(ProductList, [{
+	        key: "setLocalstorage",
+	        value: function setLocalstorage(ev) {
+	            _tools.Tools.setHistroy(ev);
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            var _this2 = this;
+	
+	            return _react2.default.createElement(
+	                "ul",
+	                { className: "pro-list" },
+	                this.props.listData.map(function (ele, index) {
+	                    return _react2.default.createElement(
+	                        "li",
+	                        { key: index, className: "pro-item" },
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "#/detail/" + ele.goodsID, className: "pic", onClick: function onClick() {
+	                                    return _this2.setLocalstorage(ele.goodsID);
+	                                } },
+	                            _react2.default.createElement("img", { src: ele.goodsListImg })
+	                        ),
+	                        _react2.default.createElement(
+	                            _reactRouter.Link,
+	                            { to: "/detail/" + ele.goodsID },
+	                            _react2.default.createElement(
+	                                "p",
+	                                null,
+	                                ele.goodsName
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "p",
+	                            { className: "price" },
+	                            _react2.default.createElement(
+	                                "em",
+	                                null,
+	                                "\uFFE5",
+	                                ele.price
+	                            ),
+	                            " ",
+	                            _react2.default.createElement(
+	                                "del",
+	                                null,
+	                                "\uFFE5888"
+	                            )
+	                        )
+	                    );
+	                })
+	            );
+	        }
+	    }]);
+	
+	    return ProductList;
+	}(_react.Component);
+	
+	exports.ProductList = ProductList;
+
+/***/ },
+/* 317 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "loading.gif";
+
+/***/ },
+/* 318 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	__webpack_require__(319);
+	
+	var _common = __webpack_require__(294);
+	
+	var _react = __webpack_require__(79);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(236);
+	
+	var _tools = __webpack_require__(296);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -34176,17 +34786,165 @@
 	    function DetailPage(props) {
 	        _classCallCheck(this, DetailPage);
 	
-	        return _possibleConstructorReturn(this, (DetailPage.__proto__ || Object.getPrototypeOf(DetailPage)).call(this, props));
+	        var _this = _possibleConstructorReturn(this, (DetailPage.__proto__ || Object.getPrototypeOf(DetailPage)).call(this, props));
+	
+	        _this.state = {
+	            bannerList: [],
+	            goodname: "",
+	            goodprice: "",
+	            buynumber: ""
+	        };
+	        _this.num = 0;
+	        _this.goodID = _this.props.params.goodsID;
+	        $.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?", { goodsID: _this.goodID }, function (data) {
+	            _this.setState({
+	                bannerList: JSON.parse(data[0].imgsUrl),
+	                goodname: data[0].goodsName,
+	                goodprice: data[0].price,
+	                buynumber: data[0].buynumber
+	            });
+	        });
+	        return _this;
 	    }
 	
 	    _createClass(DetailPage, [{
+	        key: "addCart",
+	        value: function addCart() {
+	            var userID = _tools.Tools.getUserId();
+	            this.num++;
+	
+	            userID && $.get("http://datainfo.duapp.com/shopdata/updatecar.php", { userID: userID, goodsID: this.goodID, number: this.num }, function (data) {
+	                if (data == 1) {
+	                    alert("添加成功");
+	                } else {
+	                    alert("添加失败");
+	                }
+	            });
+	        }
+	    }, {
+	        key: "checkUser",
+	        value: function checkUser(ev) {
+	            if (_tools.Tools.getUserId()) {
+	                ev.target.href = "#/more";
+	            } else {
+	                ev.target.href = "#/login";
+	            }
+	        }
+	    }, {
 	        key: "render",
 	        value: function render() {
+	            var _this2 = this;
+	
 	            return _react2.default.createElement(
 	                "div",
-	                null,
-	                "\u4E3B\u9875"
+	                { className: "detailPage", id: "detail-page" },
+	                _react2.default.createElement(_common.Header, { title: "商品资料", hasRight: true, hasLeft: true, left: "<", right: _react2.default.createElement(
+	                        "a",
+	                        { className: "iconfont", onClick: function onClick(ev) {
+	                                return _this2.checkUser(ev);
+	                            } },
+	                        "\uE608"
+	                    ) }),
+	                _react2.default.createElement(
+	                    _common.Content,
+	                    { className: "content" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "swiper-container", ref: "swiper-container" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "swiper-wrapper" },
+	                            this.state.bannerList.map(function (ele, i) {
+	                                return _react2.default.createElement(
+	                                    "div",
+	                                    { key: i, className: "swiper-slide" },
+	                                    _react2.default.createElement("img", { src: ele })
+	                                );
+	                            })
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { ref: "pagination", className: "swiper-btns" },
+	                        _react2.default.createElement("ul", { className: "self-Pagination" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "ul",
+	                        { className: "pro-info" },
+	                        _react2.default.createElement(
+	                            "li",
+	                            { className: "pro-name" },
+	                            this.state.goodname
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            { className: "pro-price" },
+	                            _react2.default.createElement(
+	                                "em",
+	                                null,
+	                                "\uFFE5",
+	                                this.state.goodprice
+	                            ),
+	                            _react2.default.createElement(
+	                                "del",
+	                                null,
+	                                "\uFFE5999"
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            { className: "pro-num" },
+	                            "\u8D2D\u4E70\u4EBA\u6570 :\xA0",
+	                            this.state.buynumber
+	                        )
+	                    ),
+	                    _react2.default.createElement("div", { className: "swiper-self-pagination" })
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "detail-footer" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "look-wrap" },
+	                        _react2.default.createElement(
+	                            "i",
+	                            { className: "iconfont" },
+	                            "\uE6C6"
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { className: "look-detail", href: "#/information/" + this.goodID },
+	                            "\u67E5\u770B\u5546\u54C1\u8BE6\u60C5"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "add-wrap" },
+	                        _react2.default.createElement(
+	                            "button",
+	                            { className: "add-cart", onClick: function onClick() {
+	                                    return _this2.addCart();
+	                                } },
+	                            "\u6DFB\u52A0\u5230\u8D2D\u7269\u8F66"
+	                        )
+	                    )
+	                )
 	            );
+	        }
+	    }, {
+	        key: "componentDidMount",
+	        value: function componentDidMount() {
+	            this.swiper = new Swiper(this.refs["swiper-container"], {
+	                pagination: this.refs.pagination,
+	                slidesPerView: '3',
+	                loop: true
+	            });
+	        }
+	    }, {
+	        key: "componentDidUpdate",
+	        value: function componentDidUpdate() {
+	            this.swiper.update();
+	            this.swiper.reLoop();
 	        }
 	    }]);
 	
@@ -34194,6 +34952,2488 @@
 	}(_react.Component);
 	
 	exports.default = DetailPage;
+
+/***/ },
+/* 319 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 320 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	__webpack_require__(321);
+	
+	var _common = __webpack_require__(294);
+	
+	var _react = __webpack_require__(79);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(236);
+	
+	var _tools = __webpack_require__(296);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Created by Administrator on 2017/1/6.
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+	
+	
+	var InformationPage = function (_Component) {
+	    _inherits(InformationPage, _Component);
+	
+	    function InformationPage(props) {
+	        _classCallCheck(this, InformationPage);
+	
+	        var _this = _possibleConstructorReturn(this, (InformationPage.__proto__ || Object.getPrototypeOf(InformationPage)).call(this, props));
+	
+	        _this.state = {
+	            pic: "",
+	            goodsName: "",
+	            caizhi: "",
+	            chandi: "",
+	            className: ""
+	        };
+	        _this.goodID = _this.props.params.goodsID;
+	        $.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?", { goodsID: _this.goodID }, function (data) {
+	            console.log(data);
+	            _this.setState({
+	                pic: data[0].goodsListImg,
+	                goodsName: data[0].goodsName,
+	                caizhi: data[0].detail,
+	                className: data[0].className
+	            });
+	        });
+	        return _this;
+	    }
+	
+	    _createClass(InformationPage, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "informationPage", id: "information-page" },
+	                _react2.default.createElement(_common.Header, { title: "\u5546\u54C1\u8D44\u6599", hasLeft: true, hasRight: true, left: "<", right: _react2.default.createElement(
+	                        "a",
+	                        { className: "iconfont" },
+	                        "\uE608"
+	                    ) }),
+	                _react2.default.createElement(
+	                    _common.Content,
+	                    null,
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "iformation-pic" },
+	                        _react2.default.createElement("img", { src: this.state.pic, alt: "\u5546\u54C1\u8D44\u6599" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "iformation-content" },
+	                        _react2.default.createElement(
+	                            "p",
+	                            null,
+	                            "\u54C1\u724C\u540D\u79F0\uFF1A\u7F8E\u7279\u65AF\u90A6\u5A01Meterbonwe"
+	                        ),
+	                        _react2.default.createElement(
+	                            "p",
+	                            null,
+	                            "\u5546\u54C1\u540D\u79F0\uFF1A",
+	                            this.state.goodsName
+	                        ),
+	                        _react2.default.createElement(
+	                            "p",
+	                            null,
+	                            "\u6750\u8D28\uFF1A",
+	                            this.state.caizhi
+	                        ),
+	                        _react2.default.createElement(
+	                            "p",
+	                            null,
+	                            "\u4EA7\u5730\uFF1A\u4E2D\u56FD"
+	                        ),
+	                        _react2.default.createElement(
+	                            "p",
+	                            null,
+	                            "\u5546\u54C1\u7F16\u53F7\uFF1A6900252970172"
+	                        ),
+	                        _react2.default.createElement(
+	                            "p",
+	                            null,
+	                            "\u6D17\u6DA4\u8BF4\u660E\uFF1A\u6700\u9AD8\u6D17\u6DA4\u6E29\u5EA630\u5EA6\uFF0C\u7F13\u548C\u7A0B\u5E8F\uFF0C\u4E0D\u53EF\u6F02\u767D\uFF0C\u60AC\u6302\u667E\u5E72\uFF0C\u71A8\u6597\u5730\u677F\u6700\u9AD8\u6E29\u5EA6110\u5EA6\uFF0C\u4E0D\u53EF\u5E72\u6D17"
+	                        ),
+	                        _react2.default.createElement(
+	                            "p",
+	                            null,
+	                            "\u6240\u5C5E\u5206\u7C7B\uFF1A",
+	                            this.state.className
+	                        ),
+	                        _react2.default.createElement(
+	                            "p",
+	                            null,
+	                            "\u5907\u6CE8\uFF1A\u65E0\u914D\u4EF6"
+	                        ),
+	                        _react2.default.createElement(
+	                            "p",
+	                            null,
+	                            "\u5176\u4ED6\uFF1A24164320"
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return InformationPage;
+	}(_react.Component);
+	
+	exports.default = InformationPage;
+
+/***/ },
+/* 321 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 322 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	__webpack_require__(323);
+	
+	var _common = __webpack_require__(294);
+	
+	var _ProductList = __webpack_require__(316);
+	
+	var _react = __webpack_require__(79);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _config = __webpack_require__(302);
+	
+	var _reactIscroll = __webpack_require__(297);
+	
+	var _reactIscroll2 = _interopRequireDefault(_reactIscroll);
+	
+	var _tools = __webpack_require__(296);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /**
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Created by Administrator on 2017/1/6.
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
+	
+	
+	var BrowsePage = function (_Component) {
+	    _inherits(BrowsePage, _Component);
+	
+	    function BrowsePage(props) {
+	        _classCallCheck(this, BrowsePage);
+	
+	        var _this = _possibleConstructorReturn(this, (BrowsePage.__proto__ || Object.getPrototypeOf(BrowsePage)).call(this, props));
+	
+	        _this.state = {
+	            listData: []
+	        };
+	        _this.goodsID = undefined;
+	        _this.refresh = false;
+	        _this.arr = [];
+	        _this.getProductData();
+	        return _this;
+	    }
+	
+	    _createClass(BrowsePage, [{
+	        key: "getProductData",
+	        value: function getProductData() {
+	            var _this2 = this;
+	
+	            var Histroy = _tools.Tools.getHistroy("histroy");
+	            if (Histroy) {
+	                for (var i = 0; i < Histroy.length - 1; i++) {
+	                    $.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?", {
+	                        "goodsID": Histroy[i]
+	                    }, function (data) {
+	                        // this.arr.push(data[0]);
+	                        // this.setState({listData:this.arr})
+	                        if (data) {
+	                            _this2.setState({
+	                                listData: _this2.state.listData.concat(data[0])
+	                            });
+	                        }
+	                    });
+	                }
+	            }
+	        }
+	    }, {
+	        key: "componentWillMount",
+	        value: function componentWillMount() {
+	            // setTimeout(()=>{
+	            //
+	            // },100)
+	        }
+	    }, {
+	        key: "changeclassID",
+	        value: function changeclassID(id) {
+	            this.classID = id;
+	            this.pageCode = 0;
+	            this.getProductData();
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "browsePage", id: "browse-page" },
+	                _react2.default.createElement(_common.Header, { hasRight: true, hasLeft: true, left: "<", title: "\u5386\u53F2\u8BB0\u5F55", right: _react2.default.createElement(
+	                        "a",
+	                        { onClick: function onClick() {
+	                                return _tools.Tools.delLocalStorage("histroy");
+	                            } },
+	                        "\u6E05\u7A7A"
+	                    ) }),
+	                _react2.default.createElement(
+	                    _common.Content,
+	                    null,
+	                    _react2.default.createElement(
+	                        _reactIscroll2.default,
+	                        { iScroll: IScroll, options: _config.ScrollOptions },
+	                        _react2.default.createElement(_ProductList.ProductList, { listData: this.state.listData })
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return BrowsePage;
+	}(_react.Component);
+	
+	exports.default = BrowsePage;
+
+/***/ },
+/* 323 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 324 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _common = __webpack_require__(294);
+	
+	var _react = __webpack_require__(79);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(325);
+	
+	var _Cover = __webpack_require__(326);
+	
+	var _Cover2 = _interopRequireDefault(_Cover);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var feedbackPage = function (_Component) {
+	    _inherits(feedbackPage, _Component);
+	
+	    function feedbackPage(props) {
+	        _classCallCheck(this, feedbackPage);
+	
+	        var _this = _possibleConstructorReturn(this, (feedbackPage.__proto__ || Object.getPrototypeOf(feedbackPage)).call(this, props));
+	
+	        _this.state = {
+	            off: false
+	        };
+	        return _this;
+	    }
+	
+	    _createClass(feedbackPage, [{
+	        key: "butClick",
+	        value: function butClick() {
+	
+	            this.setState({
+	                off: !this.state.off
+	            });
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            var _this2 = this;
+	
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "feedbackPage", id: "feedbackPage" },
+	                _react2.default.createElement(_common.Header, { title: "\u610F\u89C1\u53CD\u9988", hasLeft: true, left: "<" }),
+	                _react2.default.createElement(
+	                    _common.Content,
+	                    null,
+	                    _react2.default.createElement("textarea", { className: "text" }),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        _react2.default.createElement(
+	                            "button",
+	                            { className: "save", onClick: function onClick() {
+	                                    return _this2.butClick();
+	                                } },
+	                            "\u63D0\u4EA4"
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(_Cover2.default, { show: this.state.off, changeState: function changeState() {
+	                        return _this2.butClick();
+	                    }, textcover: "\u53CD\u9988\u5931\u8D25" })
+	            );
+	        }
+	    }]);
+	
+	    return feedbackPage;
+	}(_react.Component);
+	
+	exports.default = feedbackPage;
+	
+	if (true) {
+	    module.hot.accept();
+	}
+
+/***/ },
+/* 325 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 326 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	__webpack_require__(327);
+	
+	var _react = __webpack_require__(79);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Cover = function (_Component) {
+	    _inherits(Cover, _Component);
+	
+	    function Cover(props) {
+	        _classCallCheck(this, Cover);
+	
+	        return _possibleConstructorReturn(this, (Cover.__proto__ || Object.getPrototypeOf(Cover)).call(this, props));
+	    }
+	
+	    _createClass(Cover, [{
+	        key: "back",
+	        value: function back() {
+	            this.props.changeState();
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            var _this2 = this;
+	
+	            var covername = this.props.show ? "cover showcover" : "cover";
+	            return _react2.default.createElement(
+	                "div",
+	                { className: covername },
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "tooltip" },
+	                    _react2.default.createElement(
+	                        "p",
+	                        { className: "title" },
+	                        _react2.default.createElement(
+	                            "button",
+	                            { className: "back", onClick: function onClick() {
+	                                    return _this2.back();
+	                                } },
+	                            "X"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        { className: "cover-con" },
+	                        this.props.textcover
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Cover;
+	}(_react.Component);
+	
+	exports.default = Cover;
+
+/***/ },
+/* 327 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 328 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _common = __webpack_require__(294);
+	
+	var _react = __webpack_require__(79);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(329);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var LoginPage = function (_Component) {
+	    _inherits(LoginPage, _Component);
+	
+	    function LoginPage(props) {
+	        _classCallCheck(this, LoginPage);
+	
+	        var _this = _possibleConstructorReturn(this, (LoginPage.__proto__ || Object.getPrototypeOf(LoginPage)).call(this, props));
+	
+	        if (window.localStorage.getItem("userInfo")) {
+	            var Info = JSON.parse(window.localStorage.getItem("userInfo"));
+	            _this.state = {
+	                nameError: null,
+	                pwdError: null,
+	                userID: Info.userID,
+	                password: Info.userPwd,
+	                pwdType: "password"
+	            };
+	        } else {
+	            _this.state = {
+	                nameError: null,
+	                pwdError: null,
+	                userID: null,
+	                password: null,
+	                pwdType: "password"
+	            };
+	        }
+	
+	        _this.controlPwd = true;
+	        _this.rem = false;
+	        return _this;
+	    }
+	
+	    _createClass(LoginPage, [{
+	        key: "nameChange",
+	        value: function nameChange(ev) {
+	            this.setState({
+	                userID: ev.target.value
+	            });
+	        }
+	    }, {
+	        key: "nameBlur",
+	        value: function nameBlur(ev) {
+	            this.setState({
+	                userID: ev.target.value
+	            });
+	        }
+	    }, {
+	        key: "pwdChange",
+	        value: function pwdChange(ev) {
+	            this.setState({
+	                password: ev.target.value
+	            });
+	        }
+	    }, {
+	        key: "pwdBlur",
+	        value: function pwdBlur(ev) {
+	            this.setState({
+	                password: ev.target.value
+	            });
+	            var str = ev.target.value;
+	
+	            for (var i = 0; i < str.length; i++) {
+	                if (str.charCodeAt(i) > 1000) {
+	                    this.setState({
+	                        pwdError: "密码不能为汉字 "
+	                    });
+	                    return;
+	                }
+	            }
+	        }
+	    }, {
+	        key: "loginClick",
+	        value: function loginClick() {
+	            var _this2 = this;
+	
+	            $.get("http://datainfo.duapp.com/shopdata/userinfo.php", {
+	                "status": "login",
+	                "userID": this.state.userID,
+	                "password": this.state.password
+	            }, function (data) {
+	                if (data == 0) {
+	                    _this2.setState({
+	                        nameError: "用户名不存在",
+	                        pwdError: ""
+	                    });
+	                } else if (data == 2) {
+	                    _this2.success = true;
+	                    _this2.setState({
+	                        nameError: "",
+	                        pwdError: "密码错误 "
+	                    });
+	                } else if (_this2.rem) {
+	                    var userInfo = {
+	                        userID: _this2.state.userID,
+	                        userPwd: _this2.state.password
+	                    };
+	                    window.localStorage.setItem("userInfo", JSON.stringify(userInfo));
+	                    window.location.hash = "#/";
+	                } else {
+	                    var _userInfo = {
+	                        userID: _this2.state.userID,
+	                        userPwd: _this2.state.password
+	                    };
+	                    window.sessionStorage.setItem("userInfo", JSON.stringify(_userInfo));
+	                    window.location.hash = "#/";
+	                }
+	            });
+	        }
+	    }, {
+	        key: "ChangeType",
+	        value: function ChangeType() {
+	            this.controlPwd = !this.controlPwd;
+	            console.log(this.controlPwd);
+	            if (this.controlPwd) {
+	                this.setState({
+	                    pwdType: "password"
+	                });
+	            } else {
+	                this.setState({
+	                    pwdType: "text"
+	                });
+	            }
+	        }
+	    }, {
+	        key: "RemberPwd",
+	        value: function RemberPwd() {
+	            this.rem = !this.rem;
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            var _this3 = this;
+	
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "LoginPage", id: "LoginPage" },
+	                _react2.default.createElement(_common.Header, { title: "\u8D70\u79C0\u7528\u6237\u767B\u5F55" }),
+	                _react2.default.createElement(
+	                    _common.Content,
+	                    null,
+	                    _react2.default.createElement(
+	                        "ul",
+	                        { className: "login-list" },
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            _react2.default.createElement("input", { type: "text", placeholder: "\u8BF7\u8F93\u5165\u8D26\u6237", onChange: function onChange(ev) {
+	                                    return _this3.nameChange(ev);
+	                                }, value: this.state.userID, onBlur: function onBlur(ev) {
+	                                    return _this3.nameBlur(ev);
+	                                }, className: "text-bar" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            { className: "error" },
+	                            _react2.default.createElement(
+	                                "span",
+	                                null,
+	                                this.state.nameError
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            _react2.default.createElement("input", { type: this.state.pwdType, onChange: function onChange(ev) {
+	                                    return _this3.pwdChange(ev);
+	                                }, value: this.state.password, placeholder: "\u8BF7\u8F93\u5165\u5BC6\u7801", onBlur: function onBlur(ev) {
+	                                    return _this3.pwdBlur(ev);
+	                                }, className: "text-bar" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            { className: "error" },
+	                            _react2.default.createElement(
+	                                "span",
+	                                null,
+	                                this.state.pwdError
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            _react2.default.createElement(
+	                                "label",
+	                                null,
+	                                _react2.default.createElement("input", { type: "checkbox", onClick: function onClick() {
+	                                        return _this3.RemberPwd();
+	                                    } }),
+	                                _react2.default.createElement(
+	                                    "span",
+	                                    null,
+	                                    "\u8BB0\u4F4F\u5BC6\u7801"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "a",
+	                                { className: "go-forget" },
+	                                "\u5FD8\u8BB0\u5BC6\u7801\uFF1F"
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            _react2.default.createElement(
+	                                "label",
+	                                null,
+	                                _react2.default.createElement("input", { type: "checkbox", onClick: function onClick() {
+	                                        return _this3.ChangeType();
+	                                    } }),
+	                                _react2.default.createElement(
+	                                    "span",
+	                                    null,
+	                                    "\u663E\u793A\u5BC6\u7801"
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            _react2.default.createElement(
+	                                "button",
+	                                { className: "login-in", onClick: function onClick() {
+	                                        return _this3.loginClick();
+	                                    } },
+	                                "\u767B\u5F55"
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            _react2.default.createElement(
+	                                "a",
+	                                { className: "go-reg", href: "#register" },
+	                                "\u6CE8\u518C"
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return LoginPage;
+	}(_react.Component);
+	
+	exports.default = LoginPage;
+
+/***/ },
+/* 329 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 330 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _common = __webpack_require__(294);
+	
+	var _react = __webpack_require__(79);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(331);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var RegisterPage = function (_Component) {
+	    _inherits(RegisterPage, _Component);
+	
+	    function RegisterPage(props) {
+	        _classCallCheck(this, RegisterPage);
+	
+	        var _this = _possibleConstructorReturn(this, (RegisterPage.__proto__ || Object.getPrototypeOf(RegisterPage)).call(this, props));
+	
+	        _this.state = {
+	            nameError: null,
+	            pwdError: null,
+	            repwdError: null
+	        };
+	        _this.userName = null;
+	        _this.pwd = null;
+	        _this.repwd = null;
+	        _this.success = false;
+	        return _this;
+	    }
+	
+	    _createClass(RegisterPage, [{
+	        key: "userChange",
+	        value: function userChange(ev) {
+	            this.userName = ev.target.value;
+	            if (!this.userName) {
+	                this.setState({
+	                    nameError: "用户名不能为空"
+	                });
+	            } else {
+	                this.setState({
+	                    nameError: ""
+	                });
+	            }
+	        }
+	    }, {
+	        key: "pwdChange",
+	        value: function pwdChange(ev) {
+	            this.pwd = ev.target.value;
+	            if (this.pwd.length < 6) {
+	                this.setState({
+	                    pwdError: "密码不能少于6位"
+	                });
+	            } else {
+	                this.setState({
+	                    pwdError: ""
+	                });
+	            }
+	        }
+	    }, {
+	        key: "repwdChange",
+	        value: function repwdChange(ev) {
+	            var _this2 = this;
+	
+	            this.repwd = ev.target.value;
+	            if (this.pwd != this.repwd) {
+	                this.setState({
+	                    repwdError: "请重新输入密码"
+	                });
+	            } else {
+	                $.get("http://datainfo.duapp.com/shopdata/userinfo.php?", {
+	                    "status": "register",
+	                    "userID": this.userName,
+	                    "password": this.pwd
+	                }, function (data) {
+	                    if (data == 0) {
+	                        _this2.setState({
+	                            nameError: "用户名重名"
+	                        });
+	                    } else if (data == 1) {
+	                        _this2.success = true;
+	                        _this2.setState({
+	                            nameError: " "
+	                        });
+	                    }
+	                });
+	                this.setState({
+	                    repwdError: " "
+	                });
+	            }
+	        }
+	    }, {
+	        key: "butClick",
+	        value: function butClick() {
+	            if (this.success === false) {
+	                return false;
+	            } else {
+	                window.location.hash = "#/login";
+	            }
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            var _this3 = this;
+	
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "RegisterPage", id: "RegisterPage" },
+	                _react2.default.createElement(_common.Header, { title: "\u8D70\u79C0\u7528\u6237\u6CE8\u518C" }),
+	                _react2.default.createElement(
+	                    _common.Content,
+	                    null,
+	                    _react2.default.createElement(
+	                        "ul",
+	                        { className: "register-list" },
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            _react2.default.createElement(
+	                                "span",
+	                                null,
+	                                "\u8D26\u6237\u540D\u79F0:"
+	                            ),
+	                            _react2.default.createElement("input", { type: "text", className: "text-bar", onBlur: function onBlur(ev) {
+	                                    return _this3.userChange(ev);
+	                                }, placeholder: "\u8BF7\u8F93\u5165\u7528\u6237" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            { className: "error" },
+	                            _react2.default.createElement(
+	                                "span",
+	                                null,
+	                                this.state.nameError
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            _react2.default.createElement(
+	                                "span",
+	                                null,
+	                                "\u767B\u5F55\u5BC6\u7801:"
+	                            ),
+	                            _react2.default.createElement("input", { type: "password", className: "text-bar", onBlur: function onBlur(ev) {
+	                                    return _this3.pwdChange(ev);
+	                                }, placeholder: "\u8BF7\u8F93\u5165\u5BC6\u7801" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            { className: "error" },
+	                            _react2.default.createElement(
+	                                "span",
+	                                null,
+	                                this.state.pwdError
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            _react2.default.createElement(
+	                                "span",
+	                                null,
+	                                "\u786E\u8BA4\u5BC6\u7801:"
+	                            ),
+	                            _react2.default.createElement("input", { type: "password", className: "text-bar", onBlur: function onBlur(ev) {
+	                                    return _this3.repwdChange(ev);
+	                                }, placeholder: "\u8BF7\u8F93\u5165\u5BC6\u7801" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            { className: "error" },
+	                            _react2.default.createElement(
+	                                "span",
+	                                null,
+	                                this.state.repwdError
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "a",
+	                        { className: "go-login", href: "javascript:void(null)", onClick: function onClick() {
+	                                return _this3.butClick();
+	                            } },
+	                        _react2.default.createElement(
+	                            "button",
+	                            { className: "bigbut" },
+	                            "\u786E\u5B9A\u6CE8\u518C"
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return RegisterPage;
+	}(_react.Component);
+	
+	exports.default = RegisterPage;
+	
+	if (true) {
+	
+	    module.hot.accept();
+	}
+
+/***/ },
+/* 331 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 332 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _common = __webpack_require__(294);
+	
+	var _react = __webpack_require__(79);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(333);
+	
+	var _touxiang = __webpack_require__(334);
+	
+	var _touxiang2 = _interopRequireDefault(_touxiang);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var myShowPage = function (_Component) {
+	    _inherits(myShowPage, _Component);
+	
+	    function myShowPage(props) {
+	        _classCallCheck(this, myShowPage);
+	
+	        var _this = _possibleConstructorReturn(this, (myShowPage.__proto__ || Object.getPrototypeOf(myShowPage)).call(this, props));
+	
+	        _this.choiceList = [{
+	            path: "#/order",
+	            content: "我的订单",
+	            classname: " "
+	        }, {
+	            path: "#/discount",
+	            content: "我的优惠劵",
+	            classname: " "
+	        }, {
+	            path: "#/browse",
+	            content: "浏览记录",
+	            classname: " "
+	        }, {
+	            path: "#colect",
+	            content: "我的收藏",
+	            classname: "del"
+	        }];
+	        _this.userInfo = window.localStorage.getItem("userInfo") ? JSON.parse(window.localStorage.getItem("userInfo")) : JSON.parse(window.sessionStorage.getItem("userInfo"));
+	        _this.userID = _this.userInfo.userID;
+	        return _this;
+	    }
+	
+	    _createClass(myShowPage, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "myShowPage", id: "myShowPage" },
+	                _react2.default.createElement(_common.Header, { title: "\u6211\u7684\u79C0", right: "\u5145\u503C", hasRight: true }),
+	                _react2.default.createElement(
+	                    _common.Content,
+	                    { Hasfooter: true },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "pic-text" },
+	                        _react2.default.createElement("img", { src: _touxiang2.default }),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "user-info" },
+	                            _react2.default.createElement(
+	                                "p",
+	                                null,
+	                                "\u6635\u79F0\uFF1A",
+	                                this.userID
+	                            ),
+	                            _react2.default.createElement(
+	                                "p",
+	                                null,
+	                                "\u91D1\u989D\uFF1A99999.00"
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "ul",
+	                        { className: "choiceBox" },
+	                        this.choiceList.map(function (e, i) {
+	                            return _react2.default.createElement(
+	                                "li",
+	                                { key: i, className: e.classname },
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: e.path },
+	                                    _react2.default.createElement(
+	                                        "span",
+	                                        { className: "choiceleft" },
+	                                        e.content
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "span",
+	                                        { className: "choiceright" },
+	                                        " > "
+	                                    )
+	                                )
+	                            );
+	                        })
+	                    )
+	                ),
+	                _react2.default.createElement(_common.Footer, { active: "3" })
+	            );
+	        }
+	    }]);
+	
+	    return myShowPage;
+	}(_react.Component);
+	
+	exports.default = myShowPage;
+	
+	if (true) {
+	
+	    module.hot.accept();
+	}
+
+/***/ },
+/* 333 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 334 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "36334a8794afec1b9d82d57d31e0b372.png";
+
+/***/ },
+/* 335 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _common = __webpack_require__(294);
+	
+	var _react = __webpack_require__(79);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(336);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var morePage = function (_Component) {
+	    _inherits(morePage, _Component);
+	
+	    function morePage(props) {
+	        _classCallCheck(this, morePage);
+	
+	        var _this = _possibleConstructorReturn(this, (morePage.__proto__ || Object.getPrototypeOf(morePage)).call(this, props));
+	
+	        _this.morelist = [{
+	            path: "#/alertpwd",
+	            content: "修改密码"
+	        }, {
+	            path: "#/feedback",
+	            content: "用户反馈"
+	        }, {
+	            path: "#/feedback",
+	            content: "关于"
+	        }];
+	        return _this;
+	    }
+	
+	    _createClass(morePage, [{
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "morePage", id: "morePage" },
+	                _react2.default.createElement(_common.Header, { hasLeft: true, left: "<", title: "\u66F4\u591A" }),
+	                _react2.default.createElement(
+	                    _common.Content,
+	                    null,
+	                    _react2.default.createElement(
+	                        "ul",
+	                        { className: "morelist" },
+	                        this.morelist.map(function (e, i) {
+	                            return _react2.default.createElement(
+	                                "li",
+	                                { key: i },
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: e.path },
+	                                    _react2.default.createElement(
+	                                        "span",
+	                                        { className: "list-left" },
+	                                        e.content
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "span",
+	                                        { className: "list-right" },
+	                                        " > "
+	                                    )
+	                                )
+	                            );
+	                        })
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return morePage;
+	}(_react.Component);
+	
+	exports.default = morePage;
+	
+	if (true) {
+	    module.hot.accept();
+	}
+
+/***/ },
+/* 336 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 337 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _common = __webpack_require__(294);
+	
+	var _react = __webpack_require__(79);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(338);
+	
+	var _Cover = __webpack_require__(326);
+	
+	var _Cover2 = _interopRequireDefault(_Cover);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var alertPwdPage = function (_Component) {
+	    _inherits(alertPwdPage, _Component);
+	
+	    function alertPwdPage(props) {
+	        _classCallCheck(this, alertPwdPage);
+	
+	        var _this = _possibleConstructorReturn(this, (alertPwdPage.__proto__ || Object.getPrototypeOf(alertPwdPage)).call(this, props));
+	
+	        _this.state = {
+	            oldError: null,
+	            newError: null,
+	            renewError: null,
+	            off: false
+	        };
+	        _this.oldPwd = window.localStorage.getItem("userInfo") ? JSON.parse(window.localStorage.getItem("userInfo")).userPwd : JSON.parse(window.sessionStorage.getItem("userInfo")).userPwd;
+	        _this.newPwd = null;
+	        _this.renewPwd = null;
+	        console.log(_this.oldPwd);
+	        return _this;
+	    }
+	
+	    _createClass(alertPwdPage, [{
+	        key: "oldBlur",
+	        value: function oldBlur(ev) {
+	            console.log(ev.target.value);
+	            if (ev.target.value != this.oldPwd) {
+	
+	                this.setState({
+	                    oldError: "原密码错误"
+	                });
+	            } else {
+	                this.setState({
+	                    oldError: ""
+	                });
+	            }
+	        }
+	    }, {
+	        key: "newBlur",
+	        value: function newBlur(ev) {
+	            this.newPwd = ev.target.value;
+	            if (this.newPwd.length < 6) {
+	                this.setState({
+	                    newError: "密码不能少于6位"
+	                });
+	            } else {
+	                this.setState({
+	                    newError: ""
+	                });
+	            }
+	        }
+	    }, {
+	        key: "renewBlur",
+	        value: function renewBlur(ev) {
+	            this.renewPwd = ev.target.value;
+	            if (this.newPwd != this.renewPwd) {
+	                this.setState({
+	                    renewError: "密码错误，请重新输入"
+	                });
+	            } else {
+	                this.setState({
+	                    renewError: ""
+	                });
+	            }
+	        }
+	    }, {
+	        key: "butClick",
+	        value: function butClick() {
+	
+	            this.setState({
+	                off: !this.state.off
+	            });
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            var _this2 = this;
+	
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "alertPwdPage", id: "alertPwdPage" },
+	                _react2.default.createElement(_common.Header, { title: "\u4FEE\u6539\u5BC6\u7801", hasLeft: true, left: "<" }),
+	                _react2.default.createElement(
+	                    _common.Content,
+	                    null,
+	                    _react2.default.createElement(
+	                        "ul",
+	                        { className: "pwdlist" },
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            _react2.default.createElement("input", { type: "password", onBlur: function onBlur(ev) {
+	                                    return _this2.oldBlur(ev);
+	                                }, placeholder: "\u8BF7\u8F93\u5165\u539F\u5BC6\u7801" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            { className: "error" },
+	                            _react2.default.createElement(
+	                                "span",
+	                                null,
+	                                this.state.oldError
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            _react2.default.createElement("input", { type: "password", onBlur: function onBlur(ev) {
+	                                    return _this2.newBlur(ev);
+	                                }, placeholder: "\u8BF7\u8F93\u5165\u65B0\u5BC6\u7801" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            { className: "error" },
+	                            _react2.default.createElement(
+	                                "span",
+	                                null,
+	                                this.state.newError
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            null,
+	                            _react2.default.createElement("input", { type: "password", onBlur: function onBlur(ev) {
+	                                    return _this2.renewBlur(ev);
+	                                }, placeholder: "\u8BF7\u518D\u6B21\u8F93\u5165\u65B0\u5BC6\u7801" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "li",
+	                            { className: "error" },
+	                            _react2.default.createElement(
+	                                "span",
+	                                null,
+	                                this.state.renewError
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        _react2.default.createElement(
+	                            "button",
+	                            { className: "save", onClick: function onClick() {
+	                                    return _this2.butClick();
+	                                } },
+	                            "\u4FDD\u5B58"
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(_Cover2.default, { show: this.state.off, changeState: function changeState() {
+	                        return _this2.butClick();
+	                    }, textcover: "\u4FEE\u6539\u5BC6\u7801\u5931\u8D25" })
+	            );
+	        }
+	    }]);
+	
+	    return alertPwdPage;
+	}(_react.Component);
+	
+	exports.default = alertPwdPage;
+	
+	if (true) {
+	    module.hot.accept();
+	}
+
+/***/ },
+/* 338 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 339 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _common = __webpack_require__(294);
+	
+	var _react = __webpack_require__(79);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(340);
+	
+	var _reactRouter = __webpack_require__(236);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	//路由的连接的使用
+	
+	//整合购物车页面中见的主体部分的搭建
+	var CarList = function (_Component) {
+		_inherits(CarList, _Component);
+	
+		function CarList(props) {
+			_classCallCheck(this, CarList);
+	
+			return _possibleConstructorReturn(this, (CarList.__proto__ || Object.getPrototypeOf(CarList)).call(this, props));
+		}
+	
+		_createClass(CarList, [{
+			key: "render",
+			value: function render() {
+				var _this2 = this;
+	
+				return _react2.default.createElement(
+					"ul",
+					{ className: "carList" },
+					this.props.carData.map(function (ele, index) {
+						return _react2.default.createElement(
+							"li",
+							{ key: index, className: "cart-item" },
+							_react2.default.createElement("input", { type: "checkbox", name: "carProduct", className: "carleft" }),
+							_react2.default.createElement(
+								"div",
+								{ className: "carRight" },
+								_react2.default.createElement(
+									"a",
+									{ href: "###", className: "pic" },
+									_react2.default.createElement("img", { src: ele.goodsListImg })
+								),
+								_react2.default.createElement(
+									"div",
+									{ className: "info" },
+									_react2.default.createElement(
+										"p",
+										{ className: "p-name" },
+										ele.goodsName
+									),
+									_react2.default.createElement(
+										"p",
+										{ className: "price" },
+										"\u5355\u4EF7: ",
+										_react2.default.createElement(
+											"em",
+											null,
+											"$",
+											ele.price
+										)
+									),
+									_react2.default.createElement(
+										"div",
+										{ className: "num-wrap" },
+										"\u6570\u91CF:",
+										_react2.default.createElement(
+											"button",
+											{ className: "minus", onClick: function onClick() {
+													return _this2.props.changeData(-1, index);
+												} },
+											"-"
+										),
+										_react2.default.createElement("input", { type: "text", value: ele.number, disabled: "disabled" }),
+										_react2.default.createElement(
+											"button",
+											{ className: "plus", onClick: function onClick() {
+													return _this2.props.changeData(1, index);
+												} },
+											"+"
+										)
+									)
+								),
+								_react2.default.createElement(
+									"a",
+									{ className: "delete", href: "javascript:void (0);" },
+									_react2.default.createElement(
+										"i",
+										{ className: "iconfont", onClick: function onClick() {
+												return _this2.props.changeData(0, index);
+											} },
+										"\uE636"
+									)
+								)
+							)
+						);
+					})
+				);
+			}
+		}]);
+	
+		return CarList;
+	}(_react.Component);
+	
+	//没有商品的页面
+	
+	
+	var NothingCar = function (_Component2) {
+		_inherits(NothingCar, _Component2);
+	
+		function NothingCar(props) {
+			_classCallCheck(this, NothingCar);
+	
+			return _possibleConstructorReturn(this, (NothingCar.__proto__ || Object.getPrototypeOf(NothingCar)).call(this, props));
+		}
+	
+		_createClass(NothingCar, [{
+			key: "render",
+			value: function render() {
+				return _react2.default.createElement(
+					"div",
+					{ className: "notingBox" },
+					_react2.default.createElement(
+						"i",
+						{ className: "iconfont" },
+						"\uE608"
+					),
+					_react2.default.createElement(
+						"p",
+						null,
+						"\u8D2D\u7269\u8F66\u7A7A"
+					)
+				);
+			}
+		}]);
+	
+		return NothingCar;
+	}(_react.Component);
+	
+	//进行购物车整体的结构的搭建
+	
+	
+	var ProductCar = function (_Component3) {
+		_inherits(ProductCar, _Component3);
+	
+		function ProductCar(props) {
+			_classCallCheck(this, ProductCar);
+	
+			//设置状态
+			var _this4 = _possibleConstructorReturn(this, (ProductCar.__proto__ || Object.getPrototypeOf(ProductCar)).call(this, props));
+	
+			_this4.state = {
+				carData: [],
+				totalNumber: 0,
+				totalPrice: 0
+			};
+			//加载也额面之前，进行购物车数据的加载
+			_this4.uodateCar();
+			//设置函数，让子文件也能影响元素的设置
+			_this4.changeData = _this4.changeData.bind(_this4);
+			return _this4;
+		}
+	
+		//请求最新的购物车数据
+	
+	
+		_createClass(ProductCar, [{
+			key: "uodateCar",
+			value: function uodateCar() {
+				var _this5 = this;
+	
+				$.getJSON("http://datainfo.duapp.com/shopdata/getCar.php?callback=?", { userID: "13938638211" }, function (data) {
+					_this5.setState({
+						carData: data
+					});
+					//调用函数进行总数的计算
+					_this5.getTotal(data);
+				});
+			}
+	
+			//函数进行总数和总价格的统计
+	
+		}, {
+			key: "getTotal",
+			value: function getTotal(data) {
+				var num = 0;
+				var price = 0;
+				for (var i = 0; i < data.length; i++) {
+					num += data[i].number * 1;
+					price += data[i].number * data[i].price;
+				}
+				this.setState({
+					totalNumber: num,
+					totalPrice: price
+				});
+			}
+	
+			//点击加减，改变商品的数量
+	
+		}, {
+			key: "changeData",
+			value: function changeData(type, index) {
+				var _this6 = this;
+	
+				var data = this.state.carData;
+				var id = data[index].goodsID;
+				var num = data[index].number;
+				if (type) {
+					//增加减少数量
+					num = type + num * 1;
+				} else {
+					//删除
+					num = 0;
+				}
+				$.get("http://datainfo.duapp.com/shopdata/updatecar.php", { userID: "13938638211", goodsID: id, number: num }, function (data) {
+					_this6.uodateCar();
+				});
+			}
+	
+			//点击结算运行函数
+	
+		}, {
+			key: "toConfirm",
+			value: function toConfirm() {
+				var check = $('.carleft');
+				var newData = [];
+				var flag = false;
+				for (var i = 0, index = 0; i < check.length; i++) {
+					if (check[i].checked == true) {
+						newData[index] = JSON.stringify(this.state.carData[i]);
+						index++;
+						flag = true;
+					}
+				}
+	
+				if (flag) {
+					localStorage.setItem("checkorder", newData.join("&&&"));
+					window.location.hash = "#/checkorder";
+				} else {
+					alert('请选择商品');
+				}
+			}
+	
+			//渲染的部分
+	
+		}, {
+			key: "render",
+			value: function render() {
+				var _this7 = this;
+	
+				return _react2.default.createElement(
+					"div",
+					{ id: "carPage" },
+					_react2.default.createElement(_common.Header, { title: "\u8D2D\u7269\u8F66", right: _react2.default.createElement(
+							"a",
+							{ href: "javascript:;", onClick: function onClick() {
+									return _this7.toConfirm();
+								} },
+							"\u7ED3\u7B97"
+						), left: "<" }),
+					_react2.default.createElement(
+						_common.SubHeader,
+						null,
+						_react2.default.createElement(
+							"div",
+							{ className: "cart-bar" },
+							_react2.default.createElement(
+								"span",
+								null,
+								_react2.default.createElement(
+									"i",
+									null,
+									"\u5546\u54C1\u603B\u6570:"
+								),
+								_react2.default.createElement(
+									"em",
+									null,
+									this.state.totalNumber
+								)
+							),
+							_react2.default.createElement(
+								"span",
+								null,
+								_react2.default.createElement(
+									"i",
+									null,
+									"\u5E94\u4ED8\u603B\u989D(\u4E0D\u542B\u8FD0\u8D39):"
+								),
+								_react2.default.createElement(
+									"em",
+									{ className: "priceColor" },
+									"$",
+									this.state.totalPrice
+								)
+							)
+						)
+					),
+					_react2.default.createElement(
+						_common.Content,
+						{ hasFooter: true, hasSubHeader: true },
+						this.state.carData == 0 ? _react2.default.createElement(NothingCar, null) : _react2.default.createElement(CarList, { changeData: this.changeData, carData: this.state.carData })
+					),
+					_react2.default.createElement(_common.Footer, null)
+				);
+			}
+		}]);
+	
+		return ProductCar;
+	}(_react.Component);
+	
+	//暴露接口
+	
+	
+	exports.default = ProductCar;
+	
+	
+	if (true) {
+		module.hot.accept();
+	}
+
+/***/ },
+/* 340 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 341 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _common = __webpack_require__(294);
+	
+	var _react = __webpack_require__(79);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _list = __webpack_require__(342);
+	
+	var _list2 = _interopRequireDefault(_list);
+	
+	__webpack_require__(343);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	//确认订单页面的大体框架
+	var CheckOrder = function (_Component) {
+		_inherits(CheckOrder, _Component);
+	
+		function CheckOrder(props) {
+			_classCallCheck(this, CheckOrder);
+	
+			var _this = _possibleConstructorReturn(this, (CheckOrder.__proto__ || Object.getPrototypeOf(CheckOrder)).call(this, props));
+	
+			_this.state = {
+				userID: "13938638211",
+				orderList: [],
+				youbian: "475001",
+				dizhi: "中国北京市昌平区老牛湾",
+				dianhua: "13938638211",
+				yunfei: 5,
+				totalPrice: 0,
+				totalNum: 0
+			};
+	
+			return _this;
+		}
+	
+		_createClass(CheckOrder, [{
+			key: "getTotal",
+			value: function getTotal() {
+				var aaa = localStorage.getItem("checkorder").split("&&&");
+				for (var i = 0; i < aaa.length; i++) {
+					aaa[i] = JSON.parse(aaa[i]);
+				};
+				var num = 0;
+				var price = 0;
+				for (var i = 0; i < aaa.length; i++) {
+					num += aaa[i].number * 1;
+					price += aaa[i].number * aaa[i].price;
+				}
+				price += 5;
+				this.setState({
+					orderList: aaa,
+					totalNum: num,
+					totalPrice: price
+				});
+			}
+	
+			//组件即将渲染
+	
+		}, {
+			key: "componentWillMount",
+			value: function componentWillMount() {
+				this.getTotal();
+			}
+	
+			//提交订单
+	
+		}, {
+			key: "submitOrder",
+			value: function submitOrder() {
+				//引入当前数据进行判断
+				var list = this.state.orderList;
+				var orderItem = {
+					id: new Date().getTime(),
+					orderState: 1,
+					data: list,
+					totalNum: this.state.totalNum,
+					totalPrice: this.state.totalPrice
+				};
+				//获取当前的存在的订单数据
+				var orderArray = JSON.parse(window.localStorage.getItem("orderList") || "[]");
+				//当前订单加入进去
+				orderArray.push(orderItem);
+				//保存当前更新完成的订单
+				window.localStorage.setItem("orderList", JSON.stringify(orderArray));
+				console.log(JSON.parse(window.localStorage.getItem("orderList")));
+				//删除当前的本地数据
+				localStorage.removeItem("checkorder");
+				//点击事件，删除购物车当前的数据
+				for (var i = 0; i < list.length; i++) {
+					$.get("http://datainfo.duapp.com/shopdata/updatecar.php", { userID: this.state.userID, goodsID: list[i].goodsID, number: 0 }, function (data) {
+						console.log(data);
+					});
+				}
+	
+				window.location.hash = "#/myOrder";
+			}
+		}, {
+			key: "render",
+			value: function render() {
+				var _this2 = this;
+	
+				return _react2.default.createElement(
+					"div",
+					{ id: "orderPage" },
+					_react2.default.createElement(_common.Header, { title: "\u786E\u8BA4\u8BA2\u5355", left: "<" }),
+					_react2.default.createElement(
+						_common.Content,
+						null,
+						_react2.default.createElement(
+							"div",
+							{ className: "ads" },
+							_react2.default.createElement(
+								"h3",
+								null,
+								this.state.userID
+							),
+							_react2.default.createElement(
+								"span",
+								null,
+								"\u90AE\u7F16:"
+							),
+							_react2.default.createElement("input", { type: "text", value: this.state.youbian }),
+							_react2.default.createElement("br", null),
+							_react2.default.createElement(
+								"span",
+								null,
+								"\u8054\u7CFB\u7535\u8BDD:"
+							),
+							_react2.default.createElement("input", { type: "text", value: this.state.dianhua }),
+							_react2.default.createElement("br", null),
+							_react2.default.createElement(
+								"span",
+								null,
+								"\u5730\u5740:"
+							),
+							_react2.default.createElement("input", { type: "text", value: this.state.dizhi })
+						),
+						_react2.default.createElement(_list2.default, { ordrList: this.state.orderList }),
+						_react2.default.createElement(
+							"div",
+							{ className: "feiyong" },
+							_react2.default.createElement(
+								"div",
+								{ className: "yunfei" },
+								_react2.default.createElement(
+									"span",
+									{ className: "yunfei-left" },
+									"\u8FD0\u8D39:"
+								),
+								_react2.default.createElement(
+									"span",
+									{ className: "yunfei-right" },
+									"$",
+									this.state.yunfei
+								)
+							),
+							_react2.default.createElement(
+								"div",
+								{ className: "shijifei" },
+								_react2.default.createElement(
+									"span",
+									{ className: "shijifei-left" },
+									"\u5B9E\u9645\u4ED8\u6B3E(\u542B\u8FD0\u8D39)"
+								),
+								_react2.default.createElement(
+									"span",
+									{ className: "shijifei-right" },
+									"$",
+									this.state.totalPrice
+								)
+							)
+						),
+						_react2.default.createElement("textarea", { value: "\u4FE1\u606F\u5907\u6CE8\u3002\u3002\u3002" }),
+						_react2.default.createElement(
+							"div",
+							{ className: "tijiao" },
+							_react2.default.createElement(
+								"p",
+								null,
+								"\u5171",
+								_react2.default.createElement(
+									"em",
+									null,
+									this.state.totalNum
+								),
+								"\u4EF6,\u603B\u91D1\u989D",
+								_react2.default.createElement(
+									"em",
+									null,
+									"$",
+									this.state.totalPrice
+								)
+							),
+							_react2.default.createElement(
+								"button",
+								{ onClick: function onClick() {
+										return _this2.submitOrder();
+									} },
+								"\u63D0\u4EA4\u8BA2\u5355"
+							)
+						)
+					)
+				);
+			}
+		}]);
+	
+		return CheckOrder;
+	}(_react.Component);
+	
+	exports.default = CheckOrder;
+	
+	
+	if (true) {
+		module.hot.accept();
+	}
+
+/***/ },
+/* 342 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(79);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(343);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	//确认订单的订单信息
+	var OrderList = function (_Component) {
+		_inherits(OrderList, _Component);
+	
+		function OrderList(props) {
+			_classCallCheck(this, OrderList);
+	
+			return _possibleConstructorReturn(this, (OrderList.__proto__ || Object.getPrototypeOf(OrderList)).call(this, props));
+		}
+	
+		_createClass(OrderList, [{
+			key: "render",
+			value: function render() {
+				return _react2.default.createElement(
+					"div",
+					{ className: "orderList" },
+					_react2.default.createElement(
+						"ul",
+						null,
+						this.props.ordrList.map(function (ele, index) {
+							return _react2.default.createElement(
+								"li",
+								{ key: index, className: "order-item" },
+								_react2.default.createElement(
+									"div",
+									{ className: "order-left" },
+									_react2.default.createElement("img", { src: ele.goodsListImg })
+								),
+								_react2.default.createElement(
+									"div",
+									{ className: "order-one" },
+									_react2.default.createElement(
+										"span",
+										{ className: "one-left" },
+										ele.goodsName
+									),
+									_react2.default.createElement(
+										"span",
+										{ className: "one-right" },
+										"$",
+										ele.price
+									)
+								),
+								_react2.default.createElement(
+									"div",
+									{ className: "order-two" },
+									"x",
+									ele.number
+								)
+							);
+						})
+					)
+				);
+			}
+		}]);
+	
+		return OrderList;
+	}(_react.Component);
+	
+	exports.default = OrderList;
+	
+	
+	if (true) {
+		module.hot.accept();
+	}
+
+/***/ },
+/* 343 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 344 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _common = __webpack_require__(294);
+	
+	var _react = __webpack_require__(79);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(345);
+	
+	var _list = __webpack_require__(342);
+	
+	var _list2 = _interopRequireDefault(_list);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	//获取当前的导航栏的信息
+	var StateList = function (_Component) {
+	    _inherits(StateList, _Component);
+	
+	    function StateList(props) {
+	        _classCallCheck(this, StateList);
+	
+	        return _possibleConstructorReturn(this, (StateList.__proto__ || Object.getPrototypeOf(StateList)).call(this, props));
+	    }
+	
+	    _createClass(StateList, [{
+	        key: "selectOrderState",
+	        value: function selectOrderState(index) {
+	            this.props.selectOrderState(index);
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            var _this2 = this;
+	
+	            var data = this.props.stateData || ["全部", "未支付", "待发货", "待收货", "待评价"];
+	            return _react2.default.createElement(
+	                "ul",
+	                null,
+	                data.map(function (ele, i) {
+	                    return _react2.default.createElement(
+	                        "li",
+	                        { key: i, className: "order-state-list", onClick: function onClick() {
+	                                return _this2.selectOrderState(i);
+	                            } },
+	                        ele
+	                    );
+	                })
+	            );
+	        }
+	    }]);
+	
+	    return StateList;
+	}(_react.Component);
+	
+	//按钮的设置
+	
+	
+	var OrderBtns = function (_Component2) {
+	    _inherits(OrderBtns, _Component2);
+	
+	    function OrderBtns(props) {
+	        _classCallCheck(this, OrderBtns);
+	
+	        return _possibleConstructorReturn(this, (OrderBtns.__proto__ || Object.getPrototypeOf(OrderBtns)).call(this, props));
+	    }
+	
+	    _createClass(OrderBtns, [{
+	        key: "clearOrder",
+	        value: function clearOrder(listId) {
+	            this.props.clearOrder(listId);
+	        }
+	    }, {
+	        key: "pay",
+	        value: function pay(listId) {
+	            this.props.pay(listId);
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            var _this4 = this;
+	
+	            var state = this.props.orderList.orderState;
+	            return _react2.default.createElement(
+	                "div",
+	                { className: "order-btns" },
+	                state == 1 ? _react2.default.createElement(
+	                    "div",
+	                    null,
+	                    _react2.default.createElement(
+	                        "em",
+	                        null,
+	                        "\u5F85\u4ED8\u6B3E"
+	                    ),
+	                    _react2.default.createElement(
+	                        "button",
+	                        { onClick: function onClick() {
+	                                return _this4.pay(_this4.props.orderList.id);
+	                            } },
+	                        "\u7ACB\u5373\u4ED8\u6B3E"
+	                    ),
+	                    _react2.default.createElement(
+	                        "button",
+	                        { onClick: function onClick() {
+	                                return _this4.clearOrder(_this4.props.orderList.id);
+	                            } },
+	                        "\u53D6\u6D88\u8BA2\u5355"
+	                    )
+	                ) : state == 2 ? _react2.default.createElement(
+	                    "div",
+	                    null,
+	                    _react2.default.createElement(
+	                        "em",
+	                        null,
+	                        "\u5F85\u53D1\u8D27"
+	                    ),
+	                    _react2.default.createElement(
+	                        "button",
+	                        null,
+	                        "\u63D0\u9192\u53D1\u8D27"
+	                    )
+	                ) : state == 3 ? _react2.default.createElement(
+	                    "div",
+	                    null,
+	                    _react2.default.createElement(
+	                        "em",
+	                        null,
+	                        "\u5F85\u6536\u8D27"
+	                    ),
+	                    _react2.default.createElement(
+	                        "button",
+	                        null,
+	                        "\u786E\u8BA4\u53D1\u8D27"
+	                    )
+	                ) : _react2.default.createElement(
+	                    "div",
+	                    null,
+	                    _react2.default.createElement(
+	                        "em",
+	                        null,
+	                        "\u5F85\u8BC4\u4EF7"
+	                    ),
+	                    _react2.default.createElement(
+	                        "button",
+	                        null,
+	                        "\u53BB\u8BC4\u4EF7"
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return OrderBtns;
+	}(_react.Component);
+	
+	//商品的列表
+	
+	
+	var OrderListshow = function (_Component3) {
+	    _inherits(OrderListshow, _Component3);
+	
+	    function OrderListshow(props) {
+	        _classCallCheck(this, OrderListshow);
+	
+	        return _possibleConstructorReturn(this, (OrderListshow.__proto__ || Object.getPrototypeOf(OrderListshow)).call(this, props));
+	    }
+	
+	    _createClass(OrderListshow, [{
+	        key: "render",
+	        value: function render() {
+	            var _this6 = this;
+	
+	            var data = this.props.orderData || [];
+	            return _react2.default.createElement(
+	                "ul",
+	                { className: "order-list", id: "orderPage" },
+	                data.map(function (ele, i) {
+	                    return _react2.default.createElement(
+	                        "li",
+	                        { className: "order-li", key: i },
+	                        _react2.default.createElement(_list2.default, { ordrList: ele.data }),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "total-info" },
+	                            _react2.default.createElement(
+	                                "span",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "i",
+	                                    null,
+	                                    "\u603B\u91D1\u989D:"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "em",
+	                                    null,
+	                                    ele.totalPrice
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "span",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "i",
+	                                    null,
+	                                    "\u603B\u6570\u91CF:"
+	                                ),
+	                                _react2.default.createElement(
+	                                    "em",
+	                                    null,
+	                                    ele.totalNum
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(OrderBtns, { orderList: ele, clearOrder: _this6.props.clearOrder, pay: _this6.props.pay })
+	                    );
+	                })
+	            );
+	        }
+	    }]);
+	
+	    return OrderListshow;
+	}(_react.Component);
+	
+	//未付款 未发货 未收货 未评价
+	
+	
+	var MyOrder = function (_Component4) {
+	    _inherits(MyOrder, _Component4);
+	
+	    function MyOrder(props) {
+	        _classCallCheck(this, MyOrder);
+	
+	        var _this7 = _possibleConstructorReturn(this, (MyOrder.__proto__ || Object.getPrototypeOf(MyOrder)).call(this, props));
+	
+	        _this7.state = {
+	            orderList: []
+	        };
+	        _this7.clearOrder = _this7.clearOrder.bind(_this7);
+	        _this7.pay = _this7.pay.bind(_this7);
+	        _this7.selectOrderState = _this7.selectOrderState.bind(_this7);
+	        return _this7;
+	    }
+	
+	    //获取当前的数据
+	
+	
+	    _createClass(MyOrder, [{
+	        key: "huoqulist",
+	        value: function huoqulist() {
+	            var list = JSON.parse(window.localStorage.getItem("orderList"));
+	            this.setState({
+	                orderList: list
+	            });
+	        }
+	        //把数据加载到状态当中去
+	
+	    }, {
+	        key: "componentWillMount",
+	        value: function componentWillMount() {
+	            this.huoqulist();
+	        }
+	        //清除当前订单
+	
+	    }, {
+	        key: "clearOrder",
+	        value: function clearOrder(listId) {
+	            //更新state 
+	            var state = this.state.orderList;
+	            state = state.filter(function (ele) {
+	                return ele.id != listId;
+	            });
+	            this.setState({
+	                orderList: state
+	            });
+	            //删除本地保存的数据
+	            var data = JSON.parse(window.localStorage.getItem("orderList") || "[]");
+	            data = data.filter(function (ele) {
+	                return ele.id != listId;
+	            });
+	            window.localStorage.setItem("orderList", JSON.stringify(data));
+	        }
+	        //付款按钮
+	
+	    }, {
+	        key: "pay",
+	        value: function pay(listId) {
+	            var state = JSON.parse(window.localStorage.getItem("orderList"));
+	            console.log(state);
+	            for (var i = 0; i < state.length; i++) {
+	                if (listId == state[i].id) {
+	                    state[i].orderState = 2;
+	                }
+	            }
+	            this.setState({
+	                orderList: state
+	            });
+	            window.localStorage.setItem("orderList", JSON.stringify(state));
+	        }
+	
+	        //改变订单状态
+	
+	    }, {
+	        key: "selectOrderState",
+	        value: function selectOrderState(index) {
+	            console.log(index);
+	            var data = JSON.parse(window.localStorage.getItem("orderList"));
+	            if (index != 0) {
+	                data = data.filter(function (ele) {
+	                    return ele.orderState == index;
+	                });
+	            }
+	            console.log(data);
+	            this.setState({
+	                orderList: data
+	            });
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	
+	            return _react2.default.createElement(
+	                "div",
+	                { id: "myOrderPage" },
+	                _react2.default.createElement(_common.Header, { title: "\u6211\u7684\u8BA2\u5355", left: "<" }),
+	                _react2.default.createElement(
+	                    _common.SubHeader,
+	                    null,
+	                    _react2.default.createElement(StateList, { selectOrderState: this.selectOrderState })
+	                ),
+	                _react2.default.createElement(
+	                    _common.Content,
+	                    { hasSubHeader: true, hasIScroll: true },
+	                    _react2.default.createElement(OrderListshow, { orderData: this.state.orderList, clearOrder: this.clearOrder, pay: this.pay })
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return MyOrder;
+	}(_react.Component);
+	
+	exports.default = MyOrder;
+	
+	
+	if (true) {
+	    module.hot.accept();
+	}
+
+/***/ },
+/* 345 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);
